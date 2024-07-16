@@ -6,6 +6,8 @@
 
 The instructions are usually specified as [**pure text**][2]. Environments where one can specify the instructions by positioning graphical symbols and boxes, [do exist][3], but are mainly designed for children. General programming is most often only text, so the physical aspect of programming is mainly to write and edit text.
 
+<img src="chapter 01/images/Teenage-boy-checking-programming-code.margin-right.jpg" width="66%" align="left" margin="1em"/>
+
 Of course there’s a lot of thinking also. And trying out things. And so on.
 
 Which instructions you can use depend on a lot. The computer’s built in instructions are almost never used directly because each one does so exceedingly little. Instead we use instructions that are *defined in terms of* sequences of other instructions that are defined in terms of…, and so on, which at some point finally are defined in terms of the computer’s built in instructions.
