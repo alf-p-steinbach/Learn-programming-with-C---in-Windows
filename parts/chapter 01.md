@@ -14,7 +14,7 @@ Which instructions you can use depend on a lot. The computer’s built in instru
 
 A **programming language** is a set of rules for how to define new instructions (you’ll do that all the time!), and how to use instructions: what you can and must write to use them. To write the pure text specification of a program you can use almost any text editor, including &mdash; though it’s awkward &mdash; Windows’s own Notepad. But in order to create an executable program from that text you need tools that support the programming language that you’ve used, the rules, and such tools are not shipped with Windows so you need to download and install them.
 
-In passing, an alternative to creating an executable program is to get an existing executable program, such as your web browser, to let itself be controlled by your textual instructions. I.e. your textual instructions as instructions for that program, that program more or less directly “executing” your instructions. It’s only possible if the existing program does support being controlled via textual instructions, but web browsers do, using the JavaScript language.
+In passing, an alternative to creating an executable program is to get an existing executable program, such as your web browser, to let itself be directed by your textual instructions. I.e. your textual instructions as instructions for that program, with that program more or less directly “executing” your instructions. It’s only possible if the existing program does support being directed by textual instructions, but web browsers do, using the JavaScript language.
 
 Anyway this means that
 
