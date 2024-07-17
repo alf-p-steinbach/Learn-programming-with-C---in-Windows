@@ -96,7 +96,7 @@ auto main() -> int
 }
 ```
 
-After using the C++ tools in the most straightforward way to create an executable file, running it, e.g. by then double-clicking it, produces
+After using the C++ tools in the most straightforward way to create an executable file, **running** it, e.g. by then double-clicking it, produces
 
 <img src="chapter 01/images/sshot-c++-messagebox.png">
 
