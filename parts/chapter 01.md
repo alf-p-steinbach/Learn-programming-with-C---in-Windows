@@ -58,7 +58,7 @@ You *can* feed that directly to your browser by typing `javascript:alert('Hello 
 </html>
 ```
 
-HTML is not a programming language, because one can’t specify actions. It’s the **formal language** used to specify the contents, text and images, of a web page. A programming language is also a formal language, but with action capability. HTML is just passive specification of content, except that it can *contain* e.g. JavaScript snippets that do have action capability. A web browser is essentially a viewer for HTML files, which it usually fetches from the net.
+HTML is not a programming language, because one can’t specify actions. It’s the **formal language** used to specify the contents, primarily text and images, of a web page. A programming language is also a formal language, but with action capability. HTML is just passive specification of content, except that it can *contain* e.g. JavaScript snippets that do have action capability. A web browser is essentially a viewer for HTML files, which it usually fetches from the net.
 
 This local HTML file can be fed to the browser in a number of ways, including
 
