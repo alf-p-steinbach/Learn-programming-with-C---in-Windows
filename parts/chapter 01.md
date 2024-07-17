@@ -31,6 +31,47 @@ Of course a modern computer executes its built in instructions at breakneck spee
 
 ---
 
+Every web browser makes available a JavaScript instruction called `alert`, that pops up a **message box**. Using that instruction to display a message box with the text “Hello from JavaScript!” can go like this:
+
+```js
+alert( 'Hello from JavaScript!' );
+```
+
+So this is an example of the look & feel of **JavaScript** code.
+
+You *can* feed that directly to your browser by typing `javascript:alert('Hello from JavaScript!')` in its address bar. But that method gets impractical or downright impossible with larger code snippets, not to mention with a full JavaScript program that does something useful. So then instead the browser is fed a text file, e.g. an `.html` text file (`.html` is one of the filename extensions that a browser knows about), and in that text file the browser requires that the JavaScript code is placed within or referred to from some **HTML** code, which has an entirely different look & feel with lots of angle brackets:
+
+[*hello.html*](/chapter%2001/code/hello.html)
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript in the browser.</title>
+  </head>
+  <body>
+    <script>
+        alert( 'Hello from JavaScript!' );
+    </script>
+  </body>
+</html>
+```
+
+HTML is not a programming language, because one can’t specify actions. It’s the **formal language** used to specify the contents, text and images, of a web page. A programming language is also a formal language, but with action capability. HTML is just passive specification of content, except that it can *contain* e.g. JavaScript snippets that do have action capability. A web browser is essentially a viewer for HTML files, which it usually fetches from the net.
+
+This local HTML file can be fed to the browser in a number of ways, including
+
+* just double-clicking it; or
+* using the `start` command in Windows’ Cmd or PowerShell, e.g. `start hello.html`; or
+* opening the file from within the browser, e.g. keyboard shortcut `Ctrl`+`O` probably works.
+
+Result:
+
+<img src="chapter 01/images/sshot-javascript-alert.png" >
+
+You can try out this. There are *lots* of things that can go wrong so you do not necessarily, as yet, succceed. But it’s worth trying, especially if you can get help from others (or, Google is your friend).
+
 
 
 
