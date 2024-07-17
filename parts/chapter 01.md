@@ -178,7 +178,7 @@ A textual console hello from C++!
 L:\parts\chapter 01\code>|
 ```
 
-Again it’s not perfect, for in particular with this Unicode trickery digits are presented the same as in the other text. But it’s good enough. It will do.
+Again it’s not perfect, for in particular with this Unicode trickery digits are presented the same as in the other text (and it also means that you cannot just copy and paste these commands!). But it’s good enough. It will do.
 
 ---
 
