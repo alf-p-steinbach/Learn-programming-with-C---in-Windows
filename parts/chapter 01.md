@@ -66,12 +66,39 @@ This local HTML file can be fed to the browser in a number of ways, including
 * using the `start` command in Windows’ Cmd or PowerShell, e.g. `start hello.html`; or
 * opening the file from within the browser, e.g. keyboard shortcut `Ctrl`+`O` probably works.
 
-Result:
+Result with the Chrome browser:
 
 <img src="chapter 01/images/sshot-javascript-alert.png" >
 
 You can try out this. There are *lots* of things that can go wrong so you do not necessarily, as yet, succceed. But it’s worth trying, especially if you can get help from others (or, Google is your friend).
 
+---
+
+The main programming language in this book is **C++**, and unlike JavaScript it’s not supported by web browsers.
+
+C++ generally requires you to create an executable file from your program text, and as mentioned, in Windows that requires you to download, install and use tools that understand C++. On a first reading you probably don’t have such tools, so on a first reading you’ll not be able to try out the following. But this example lets you see some of what C++ is about, that Windows’s functionality is readily available to C++ programs, and among other things Windows makes available a C++ instruction called `MessageBox` that presents a message box.
+
+The Windows message box has a lot more options than JavaScript `alert`. You can choose an icon (four different) or no icon, you can choose a predefined set of buttons (the default is just an OK button), and after the user clicks away the box you can inspect which button he or she used, which is especially useful for asking simple questions. Anyway C++ use of Windows’ `MessageBox` instruction can go like this:
+
+```cpp
+    MessageBox( 0, "Hello from C++!", "C++ says:", MB_ICONINFORMATION | MB_SETFOREGROUND );
+```
+
+As with JavaScript-in-a-browser some more text is required around this C++ instruction. But here it will all be C++. The `#include` below drags in Windows’ *declaration* of the `MessageBox` function so that the C++ tools will know that that instruction exists; the `main` is a requirement of C++ (it can be expressed in various ways); and ditto the curly braces, they’re just a C++ requirement, they must be there:
+
+[*hello.cpp*](chapter%2001/code/hello.cpp)
+```cpp
+#include <windows.h>
+
+auto main() -> int
+{
+    MessageBox( 0, "Hello from C++!", "C++ says:", MB_ICONINFORMATION | MB_SETFOREGROUND );
+}
+```
+
+After using the C++ tools to create an executable file, running it, e.g. by then double-clicking it, produces
+
+<img src="chapter 01/images/sshot-c++-messagebox.png">
 
 
 
