@@ -126,7 +126,7 @@ So below I’ve *recolored* the text, with typed in commands in orange. Unfortun
 
 So here the user typed in three commands: a `subst` command, a `cd` command, and a `dir` command. The `subst` command was used to check which folder the `L:` drive letter (a *logical drive*) was mapped to; the `cd` command was used to *change directory*, which means to go (here down in-) to another folder; and the `dir` command was used to list the file names that matched a specified pattern “`hell*`”, where the `*` is a *wildcard*. Some of this, the delving into a folder and the listing of file name matches, can also be done via mousing in Windows Explorer, but Windows Explorer lacks functionality corresponding to the `subst` command, that is, it lacks support for local logical drives.
 
-Since the command coloring helps tremendously for at least some folks, including for myself, I will apply command coloring to examples further in the book &mdash; but keep in mind that on the screen commands are not specially colored; the coloring is a cosmeticized view of reality, like an Instagram photo filter.
+Since the command coloring helps tremendously for at least some folks, including for myself, I would really have liked to apply command coloring to examples further in the book. However, Github, where this document resides, doesn’t support that (their excuse that colors would be a security risk doesn’t quite ring true for me). So instead I will use some Unicode trickery to present commands &mdash; and general user input in a console &mdash; in the style of 𝙨𝙪𝙗𝙨𝙩, 𝙘𝙙 and 𝙙𝙞𝙧. But keep in mind that on the screen commands are not visually distinct; the coloring or special font is a cosmeticized view of reality, like an Instagram photo filter.
 
 While most and possibly all command interpreters lack support for a distinct color for user input, they &mdash; or rather the textual environments they run in &mdash; do let you choose the overall color of the text. I usually set the pure text environments, called **console windows**, to green text on black or dark blue text on white. And it so happens that Cmd has a built-in command called `color` that lets you choose the text and background color for the particular console window you’re working in:
 
@@ -136,12 +136,56 @@ So, commands can do all sorts of things. They’re much more powerful than using
 
 ---
 
-asd
+Many commands, including the `subst` command used above, are simply programs created with C++ or old C. Or perhaps some other programming language but C++ and C are the most common for this. Here’s a simple console-oriented C++ hello program:
 
+[*console-hello.cpp*](chapter%2001/code/text-hello.cpp)
+```cpp
+#include <stdio.h>
+
+auto main() -> int
+{
+    puts( "A textual console hello from C++!" );
+}
+```
+
+Here the `#include` drags in a declaration of the console-oriented `puts` instruction, informing the C++ tools that that instruction does exist.
+
+After using the tools to create a corresponding executable file “console-hello.exe”, the base name of that executable file, “console-hello”, can be used as a command to run it:
+
+<img src="chapter 01/images/sshot-text-hello.annotated.png" width="66%">
+
+And commonly at the start of learning programming one creates only such **console programs**, purely text oriented programs that need to be run from a command intepreter (or technically in any console window, but in practice from a command interpreter). That’s because it’s much easier to program: very much easier to program. One can concentrate on learning various important stuff rather than struggling forever with just the results presentation.
+
+So, there will be *a lot* of console oriented examples, and to save both space and work and your reading effort I will no longer present screenshots of console windows but just *the relevant text in the windows*, e.g.
+
+```text
+L:\>𝙨𝙪𝙗𝙨𝙩
+L:\: => D:\root\writings\books\2024 Learn programming with C++ in Windows
+
+L:\>𝙘𝙙 "𝙥𝙖𝙧𝙩𝙨\𝙘𝙝𝙖𝙥𝙩𝙚𝙧 01\𝙘𝙤𝙙𝙚"
+
+L:\parts\chapter 01\code>𝙙𝙞𝙧 /𝙗 𝙝𝙚𝙡𝙡*
+hello.cpp
+hello.html
+hello.manifest.xml
+hello.resources.rc
+
+L:\parts\chapter 01\code>𝙘𝙤𝙡𝙤𝙧 02
+
+L:\parts\chapter 01\code>𝙩𝙚𝙭𝙩-𝙝𝙚𝙡𝙡𝙤
+A textual console hello from C++!
+
+L:\parts\chapter 01\code>|
+```
+
+Again it’s not perfect, for in particular digits are presented the same as in the other text. But it’s good enough. It will do.
+
+---
+
+asd
 
 [1]: https://en.wikipedia.org/wiki/Computer_programming "Wikipedia’s “Computer programming” article"
 [2]: https://en.wikipedia.org/wiki/Plain_text "Wikipedia’s “Plain text” article"
 [3]: https://en.wikipedia.org/wiki/Visual_programming_language "Wikipedia’s “Visual programming language” article"
 [4]: https://learn.microsoft.com/en-us/windows/win32/controls/cookbook-overview#using-comctl32dll-version-6-in-an-application-that-uses-only-standard-extensions "Microsoft documentation: “Enabling Visual Styles”"
 [5]: https://learn.microsoft.com/en-us/windows/win32/menurc/about-resource-files "Microsoft documentation “About Resource Files”"
-
