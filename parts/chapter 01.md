@@ -106,6 +106,38 @@ It’s not *perfect*, e.g. the button has an archaic square and all gray look. U
 
 Currently (mid 2024) it’s *possible* to create a message box like the first one via JavaScript, because Microsoft still hasn’t entirely removed some old JavaScript technology in Windows, once known as the “Windows Script Host”, or WSH for short. But let’s not delve on the past. Let’s move on.
 
+---
+
+If you now have the impression that programming involves dealing with *text* and dealing with *files*, and that it involves using special *tools*, you’re right.
+
+We do much of this work in a purely textual environment called a **command interpreter**. As that term implies a command interpreter interprets and executes the commands that you type in. You type in a textual command; the command interpreter executes it, which may move some files or run a program or just produce some text as result, whatever; you type in a new command; etc., command → effect → command → effect → command → effect…, which is a simple procedure.
+
+But while it’s usually clear in one’s head while one is doing it, it can look pretty cryptic:
+
+<img src="chapter 01/images/sshot-command-prompt.png" width="66%">
+
+Windows ships with two general command interpreters called **Cmd** and **Powershell**. In addition a programmer working in Windows is very likely to enable the Windows Subsystem for Linux, or WSL for short, and then do at least some of the work in a Linux general command interpreter called **bash**. The above example uses Cmd, which is the original Windows command interpreter and which is the one that’s invoked by the C++ `system` instruction and by corresponding instructions in other programming languages.
+
+When you haven’t seen a programmer’s command interpreter before it can be difficult to see what parts of that text are commands typed in by the user, and what parts are responses from the command interpreter and/or the programs run by the commands.
+
+So below I’ve *recolored* the text, with typed in commands in orange. Unfortunately AFAIK no modern command interpreter does that automatically, or even supports doing it. So this is a very manually created clarification of the screenshot:
+
+<img src="chapter 01/images/sshot-command-prompt.annotated.png" width="66%">
+
+So here the user typed in three commands: a `subst` command, a `cd` command, and a `dir` command. The `subst` command was used to report which folder the `L:` drive letter (a *logical drive*) was mapped to; the `cd` command was used to *change directory*, which means to go (here down in-) to another folder; and the `dir` command was used to list the file names that matched a specified pattern “`hell*`”, where the `*` is a *wildcard*. Some of this, the delving into a folder and the listing of file name matches, can also be done via mousing in Windows Explorer, but Windows Explorer lacks functionality corresponding to the `subst` command, that is, it lacks support for local logical drives.
+
+Since the command coloring helps tremendously for at least some folks, including for myself, I will apply command coloring to examples further in the book &mdash; but keep in mind that on the screen commands are not specially colored; the coloring is a cosmeticized view of reality, like an Instagram photo filter.
+
+While most and possibly all command interpreters lack support for a distinct color for user input, they &mdash; or rather the textual environments they run in &mdash; do let you choose the overall color of the text. I usually set the pure text environments, called **console windows**, to green text on black or dark blue text on white. And it so happens that Cmd has a built-in command called `color` that lets you choose the text and background color for the particular console window you’re working in:
+
+<img src="chapter 01/images/sshot-command-prompt.after-color-command.png" width="66%">
+
+So, commands can do all sorts of things. They’re much more powerful than using the mouse. Not the least because you can automate things by storing a sequence of commands in a text file and from then on use that as a new command (sounds familiar, yes? &mdash; it *is* a kind of programming, with commands).
+
+---
+
+asd
+
 
 [1]: https://en.wikipedia.org/wiki/Computer_programming "Wikipedia’s “Computer programming” article"
 [2]: https://en.wikipedia.org/wiki/Plain_text "Wikipedia’s “Plain text” article"
