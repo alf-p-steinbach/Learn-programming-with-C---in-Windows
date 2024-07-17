@@ -70,7 +70,7 @@ Result with the Chrome browser:
 
 <img src="chapter 01/images/sshot-javascript-alert.png" >
 
-You can try out this. There are *lots* of things that can go wrong so you do not necessarily, as yet, succceed. But it’s worth trying, especially if you can get help from others (or, Google is your friend).
+You can try this out. There are *lots* of things that can go wrong so you do not necessarily, as yet, succceed. But it’s worth trying, especially if you can get help from others (or, Google is your friend).
 
 ---
 
@@ -96,12 +96,20 @@ auto main() -> int
 }
 ```
 
-After using the C++ tools to create an executable file, running it, e.g. by then double-clicking it, produces
+After using the C++ tools in the most straightforward way to create an executable file, running it, e.g. by then double-clicking it, produces
 
 <img src="chapter 01/images/sshot-c++-messagebox.png">
 
+It’s not *perfect*, e.g. the button has an archaic square and all gray look. Unfortunately Microsoft chose to let `MessageBox` and other GUI elements use an old archaic style by default, and made it non-trivial to get [the modern style][4]. We’ll do that later, but for now, the very same C++ code, but just by adding some special data to the executable, can produce a message box like this:
+
+<img src="chapter 01/images/sshot-c++-messagebox.modern.png">
+
+Currently (mid 2024) it’s *possible* to create a message box like the first one via JavaScript, because Microsoft still hasn’t entirely removed some old JavaScript technology in Windows, once known as the “Windows Script Host”, or WSH for short. But let’s not delve on the past. Let’s move on.
 
 
 [1]: https://en.wikipedia.org/wiki/Computer_programming "Wikipedia’s “Computer programming” article"
 [2]: https://en.wikipedia.org/wiki/Plain_text "Wikipedia’s “Plain text” article"
 [3]: https://en.wikipedia.org/wiki/Visual_programming_language "Wikipedia’s “Visual programming language” article"
+[4]: https://learn.microsoft.com/en-us/windows/win32/controls/cookbook-overview#using-comctl32dll-version-6-in-an-application-that-uses-only-standard-extensions "Microsoft documentation: “Enabling Visual Styles”"
+[5]: https://learn.microsoft.com/en-us/windows/win32/menurc/about-resource-files "Microsoft documentation “About Resource Files”"
+
