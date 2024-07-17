@@ -64,7 +64,7 @@ This local HTML file can be fed to the browser in a number of ways, including
 
 * just double-clicking it; or
 * using the `start` command in Windows’ Cmd or PowerShell, e.g. `start hello.html`; or
-* opening the file from within the browser, e.g. keyboard shortcut `Ctrl`+`O` probably works.
+* opening the file from within the browser, e.g. keyboard shortcut `Ctrl`+`O` for “open” probably works.
 
 Result with the Chrome browser:
 
