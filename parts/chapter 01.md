@@ -138,7 +138,7 @@ So, commands can do all sorts of things. They’re much more powerful than using
 
 Many commands, including the `subst` command used above, are simply programs created with C++ or old C. Or perhaps some other programming language but C++ and C are the most common for this. Here’s a simple console-oriented C++ hello program:
 
-[*console-hello.cpp*](chapter%2001/code/text-hello.cpp)
+[*text-hello.cpp*](chapter%2001/code/text-hello.cpp)
 ```cpp
 #include <stdio.h>
 
@@ -150,7 +150,7 @@ auto main() -> int
 
 Here the `#include` drags in a declaration of the console-oriented `puts` instruction, informing the C++ tools that that instruction does exist.
 
-After using the tools to create a corresponding executable file “console-hello.exe”, the base name of that executable file, “console-hello”, can be used as a command to run it:
+After using the tools to create a corresponding executable file “text-hello.exe”, the base name of that executable file, text-hello”, can be used as a command to run it:
 
 <img src="chapter 01/images/sshot-text-hello.annotated.png" width="66%">
 
