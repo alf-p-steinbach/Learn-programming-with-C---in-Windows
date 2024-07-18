@@ -153,7 +153,7 @@ So below I’ve *recolored* the text, with typed in commands in orange. Unfortun
 
 So here the user typed in three commands: a `subst` command, a `cd` command, and a `dir` command. The `subst` command was used to check which folder the `L:` drive letter (a *logical drive*) was mapped to; the `cd` command was used to *change directory*, which means to go (here down in-) to another folder; and the `dir` command was used to list the file names that matched a specified pattern “`hell*`”, where the `*` is a *wildcard*. Some of this, the delving into a folder and the listing of file name matches, can also be done via mousing in Windows Explorer, but Windows Explorer lacks functionality corresponding to the `subst` command, that is, it lacks support for local logical drives.
 
-Since the command coloring helps tremendously for at least some folks, including for myself, I would really have liked to apply command coloring to examples further in the book. However, Github, where this document resides, doesn’t support that (their excuse that colors would be a security risk doesn’t quite ring true for me). So instead I will use some Unicode trickery to present commands &mdash; and general user input in a console &mdash; in the style of 𝙨𝙪𝙗𝙨𝙩, 𝙘𝙙 and 𝙙𝙞𝙧. But keep in mind that on the screen commands are not visually distinct; the coloring or special font is a cosmeticized view of reality, like an Instagram photo filter.
+Since the command coloring helps tremendously for at least some folks, including for myself, I would really have liked to apply command coloring to examples further in the book. However, Github, where this document resides, doesn’t support that (their excuse that colors would be a security risk doesn’t quite ring true for me). So instead I will use some awkward trickery to present commands &mdash; and general user input in a console &mdash; in the style of ***`subst`***, ***`cd`*** and ***`dir`***. But keep in mind that on the screen commands are not visually distinct; the coloring or special font variation is a cosmeticized view of reality, like an Instagram photo filter.
 
 While most and possibly all command interpreters lack support for a distinct color for user input, they &mdash; or rather the textual environments they run in &mdash; do let you choose the overall color of the text. I usually set the pure text environments, called **console windows**, to green text on black or dark blue text on white. And it so happens that Cmd has a built-in command called `color` that lets you choose the text and background color for the particular console window you’re working in:
 
@@ -189,30 +189,26 @@ And commonly at the start of learning programming one creates only such **consol
 So, there will be *a lot* of console oriented examples, and to save both space and work and your reading effort I will no longer present screenshots of console windows but just *the relevant text in the windows*, e.g.
 
 <pre>
-blah!<b><i><span style="color:#FF7800">asdasd asdasd</span></i></b>!asd
-</pre>
-
-```text
-L:\>𝙨𝙪𝙗𝙨𝙩
+L:\><b><i>subst</i></b>
 L:\: => D:\root\writings\books\2024 Learn programming with C++ in Windows
 
-L:\>𝙘𝙙 "𝙥𝙖𝙧𝙩𝙨\𝙘𝙝𝙖𝙥𝙩𝙚𝙧 01\𝙘𝙤𝙙𝙚"
+L:\><b><i>cd "parts\chapter 01\code"</i></b>
 
-L:\parts\chapter 01\code>𝙙𝙞𝙧 /𝙗 𝙝𝙚𝙡𝙡*
+L:\parts\chapter 01\code><b><i>dir /b hell*</i></b>
 hello.cpp
 hello.html
 hello.manifest.xml
 hello.resources.rc
 
-L:\parts\chapter 01\code>𝙘𝙤𝙡𝙤𝙧 02
+L:\parts\chapter 01\code><b><i>color 02</i></b>
 
-L:\parts\chapter 01\code>𝙩𝙚𝙭𝙩-𝙝𝙚𝙡𝙡𝙤
+L:\parts\chapter 01\code><b><i>text-hello</i></b>
 A textual console hello from C++!
 
 L:\parts\chapter 01\code>|
-```
+</pre>
 
-Again it’s not perfect, for in particular with this Unicode trickery digits are presented the same as in the other text (and it also means that you cannot just copy and paste these commands!). But it’s good enough. It will do.
+It’s not perfect: the orange coloring shown in the screenshot earlier, was much more clear. But this is good enough. It will do.
 
 
 ## 1.3 &nbsp;Summary & the path from here.
