@@ -4,11 +4,12 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 <!-- **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*  -->
 
-- [1.1 Example: JavaScript in a browser.](#11-example-javascript-in-a-browser)
-- [1.2 Example: C++ presenting a Windows desktop message box.](#12-example-c-presenting-a-windows-desktop-message-box)
-- [1.3 Example: commands in the Cmd command interpreter.](#13-example-commands-in-the-cmd-command-interpreter)
-- [1.4 Example: C++ text output in a console.](#14-example-c-text-output-in-a-console)
-- [1.5 qweqwe](#15-qweqwe)
+  - [1.1 Some examples.](#11-some-examples)
+    - [1.1.1 Example: JavaScript in a browser.](#111-example-javascript-in-a-browser)
+    - [1.1.2 Example: C++ presenting a Windows desktop message box.](#112-example-c-presenting-a-windows-desktop-message-box)
+    - [1.1.3 Example: commands in the Cmd command interpreter.](#113-example-commands-in-the-cmd-command-interpreter)
+    - [1.1.4 Example: C++ text output in a console.](#114-example-c-text-output-in-a-console)
+- [1.2 Summary & the path from here.](#12-summary--the-path-from-here)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -43,7 +44,9 @@ Of course a modern computer executes its built in instructions at breakneck spee
 
 &hellip; for otherwise it would run out of instructions to execute in just a few seconds.
 
-### 1.1 Example: JavaScript in a browser.
+### 1.1 Some examples.
+
+#### 1.1.1 Example: JavaScript in a browser.
 
 Every web browser makes available a JavaScript instruction called `alert`, that pops up a **message box**. Using that instruction to display a message box with the text “Hello from JavaScript!” can go like this:
 
@@ -87,7 +90,7 @@ Result with the Chrome browser:
 You can try this out. There are *lots* of things that can go wrong so you do not necessarily, as yet, succceed. But it’s worth trying, especially if you can get help from others (or, Google is your friend).
 
 
-### 1.2 Example: C++ presenting a Windows desktop message box.
+#### 1.1.2 Example: C++ presenting a Windows desktop message box.
 
 The main programming language in this book is **C++**, and unlike JavaScript it’s not supported by web browsers.
 
@@ -122,7 +125,7 @@ It’s not *perfect*, e.g. the button has an archaic square and all gray look. U
 Currently (mid 2024) it’s *possible* to create a message box like the first one via JavaScript, because Microsoft still hasn’t entirely removed some old JavaScript technology in Windows, once known as the “Windows Script Host”, or WSH for short. But let’s not delve on the past. Let’s move on.
 
 
-### 1.3 Example: commands in the Cmd command interpreter.
+#### 1.1.3 Example: commands in the Cmd command interpreter.
 
 If you now have the impression that programming involves dealing with *text* and dealing with *files*, and that it involves using special *tools*, you’re right.
 
@@ -151,7 +154,7 @@ While most and possibly all command interpreters lack support for a distinct col
 So, commands can do all sorts of things. They’re much more powerful than using the mouse. Not the least because you can automate things by storing a sequence of commands in a text file and from then on use that as a new command (sounds familiar, yes? &mdash; it *is* a kind of programming, with commands).
 
 
-### 1.4 Example: C++ text output in a console.
+#### 1.1.4 Example: C++ text output in a console.
 
 Many commands, including the `subst` command used above, are simply programs created with C++ or old C. Or perhaps some other programming language but C++ and C are the most common for this. Here’s a simple console-oriented C++ hello program:
 
@@ -204,7 +207,7 @@ L:\parts\chapter 01\code>|
 Again it’s not perfect, for in particular with this Unicode trickery digits are presented the same as in the other text (and it also means that you cannot just copy and paste these commands!). But it’s good enough. It will do.
 
 
-### 1.5 Summary & the path from here.
+## 1.2 Summary & the path from here.
 
 You’ve now seen examples that
 
