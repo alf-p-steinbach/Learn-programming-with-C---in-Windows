@@ -186,7 +186,7 @@ I.e. a new command `text-hello` was created, and that command was created in a v
 
 And commonly at the start of learning programming one creates only such **console programs**, purely text oriented programs that need to be run from a command intepreter (or technically in any console window, but in practice from a command interpreter). That’s because it’s much easier to program: very much easier to program. One can concentrate on learning & investigating various important stuff rather than struggling forever with just the results presentation.
 
-So, there will be *a lot* of console oriented examples, and to save both space and work and your reading effort I will no longer present screenshots of console windows but just *the relevant text in the windows*, e.g.
+So, there will be *a lot* of console oriented examples, and to save both space and work and your reading effort I will from here on just present *the relevant text in the console windows*, and not screenshots of the windows, e.g. like
 
 <pre>
 L:\><b><i>subst</i></b>
