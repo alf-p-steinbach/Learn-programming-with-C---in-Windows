@@ -26,9 +26,9 @@ Of course there’s a lot of thinking also. And trying out things. And so on.
 
 Which instructions you can use depend on a lot. The computer’s built in instructions are almost never used directly because each one does so exceedingly little. Instead we use instructions that are *defined in terms of* sequences of other instructions that are defined in terms of…, and so on, which at some point finally are defined in terms of the computer’s built in instructions.
 
-A **programming language** is a set of rules for how to define new instructions (you’ll do that all the time!), and how to use instructions: what you can and must write to use them. To write the pure text specification of a program you can use almost any text editor, including Windows’s own Notepad. But in order to create an executable program from that text, called a **compilation** of the text, you need tools that support the programming language that you’ve used, i.e. tools that support these rules; mainly a **compiler** for the language. Windows only provides these tools for Microsoft’s language C#. And so for other languages &mdash; including this book’s main language C++ &mdash; in order to create an executable you need to download and install the requisite tools.
+A **programming language** is a set of rules for how to define new instructions (you’ll do that all the time!), and how to use instructions: what you can and must write to use them. To write the pure text specification of a program you can use almost any text editor, including Windows’s own Notepad. But in order to create an executable program from that text, called a **compilation** of the text, you need tools that support the programming language that you’ve used. I.e. you need tools that support these rules, mainly a **compiler** for the language. Windows only provides these tools for Microsoft’s language C#. And so for other languages &mdash; including this book’s main language C++ &mdash; in order to create an executable you need to download and install the requisite tools.
 
-However, an alternative to creating a new executable program is to get an existing executable program, such as your web browser, to let itself *be directed* by your textual instructions. I.e. your textual instructions are then instructions for that program, telling it what to do, with that program more or less directly “executing” your instructions. This is called **interpretation**. It’s only possible if the existing program does support being directed by textual instructions, but web browsers do. All web browsers have a built in JavaScript **interpreter**.
+However, an alternative to creating a new executable program is to get an existing one, such as your web browser, to let itself *be directed* by your textual instructions. I.e. your textual instructions are then instructions for that program, telling it what to do, with that program more or less directly “executing” your instructions. This is called **interpretation**. It’s only possible if the existing program does support being directed by textual instructions, but web browsers do. All web browsers have a built in JavaScript **interpreter**.
 
 Anyway this means that
 
@@ -111,7 +111,7 @@ auto main() -> int
 }
 ```
 
-After using the C++ tools in the most straightforward way to create an executable file, **running** it, e.g. by then double-clicking it, produces
+After using the C++ tools in the most straightforward way to create an executable file, **running** it (having it executed), e.g. by double-clicking it, produces
 
 <img src="chapter 01/images/sshot-c++-messagebox.png">
 
