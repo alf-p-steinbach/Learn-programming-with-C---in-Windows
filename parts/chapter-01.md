@@ -95,7 +95,7 @@ Result with the Chrome browser:
 
 <img src="chapter 01/images/sshot-javascript-alert.png" >
 
-You can try this out by copying the code exactly to a local “.html” text file. It’s possible to fail because there are *lots* of things that can go wrong. In that case try to figure out what went wrong, and remember that you can get help from others in forums e.g. on Reddit, and/or by googling the problem.
+You can try this out by copying the code exactly to a local “.html” text file. It’s possible to fail because there are *lots* of things that can go wrong, and there’s Murphy’s law “anything that can go wrong will go wrong”. If that happens then try to figure out what went wrong and fix it, and remember that you can get help from others in forums e.g. on Reddit, and that googling the problem can help.
 
 
 #### 1.2.2 &nbsp;Example: C++ presenting a Windows desktop message box.
