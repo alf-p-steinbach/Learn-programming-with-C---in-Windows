@@ -2,7 +2,7 @@
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
+<!-- **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*  -->
 
 - [1.1 Example: JavaScript in a browser.](#11-example-javascript-in-a-browser)
 - [1.2 Example: C++ presenting a Windows desktop message box.](#12-example-c-presenting-a-windows-desktop-message-box)
@@ -12,6 +12,7 @@
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
+---
 
 [Wikipedia][1]:
 
@@ -176,6 +177,10 @@ And commonly at the start of learning programming one creates only such **consol
 
 So, there will be *a lot* of console oriented examples, and to save both space and work and your reading effort I will no longer present screenshots of console windows but just *the relevant text in the windows*, e.g.
 
+<pre>
+blah!<b><i><font color="#FF7800">asdasd asdasd</font></i></b>!asd
+</pre>
+
 ```text
 L:\>𝙨𝙪𝙗𝙨𝙩
 L:\: => D:\root\writings\books\2024 Learn programming with C++ in Windows
@@ -199,12 +204,34 @@ L:\parts\chapter 01\code>|
 Again it’s not perfect, for in particular with this Unicode trickery digits are presented the same as in the other text (and it also means that you cannot just copy and paste these commands!). But it’s good enough. It will do.
 
 
-### 1.5 qweqwe
+### 1.5 Summary & the path from here.
 
-asd
+You’ve now seen examples that
+
+* *A beginner can reasonably use JavaScript to direct a web browser, and that’s very common.*  
+  And JavaScript is the primary choice for this, because browsers support JavaScript. In contrast C++ is not at all well suited for directing browsers. But it’s possible to [use *web assembly*][6] to run C++ applications such as games in a web browser.
+
+* *A novice **can** use C++ for Windows desktop GUI applications.*  
+  But other than simple message boxes it’s complex and much work. The usual recommendation for C++ is to use a framework such as Qt rather than using the low level Windows functionality directly. Building a GUI app with JavaScript is also possible e.g. by [building on the machinery of a web browser][7] (the VS Code editor is an example) but that’s not recommended for a novice, and the mentioned machinery is large.
+
+* *Beginners can reasonably use C++  for console applications, and that’s easy and very common.*  
+  As of mid 2024 there is no modern JavaScript alternative for console applications. The mentioned Windows WSH technology is archaic and can disappear at any time. And the node.js framework only supports asynchronous text input and presentation, which is both too advanced and too impractical.
+
+A web browser is a very functionality-rich environment. JavaScript in a web browser has access to a lot of common GUI elements for user interaction, simple to use graphics and animation, image presentation, etc. For this reason alone JavaScript in a web browser can be very *interesting* and *motivating* for a beginner. Add to that that there is a thriving large JavaScript community online where e.g. examples are shared via sites such as [JsFiddle][8]. This makes JavaScript in a browser near ideal for a beginner.
+
+At the same time, many concepts are simpler to explore and learn about via purely text based C++ console programs.
+
+And so this book uses a dual approach: at the start it’s  absolute-beginner-friendly JavaScript in a browser and just some C++, while at the end it’s almost all C++, then using e.g. the [Qt framework][9] for GUI stuff and grapics/media capability.
+
+One advantage of this approach is that the installation of support tools can be more gradual than for starting with C++. For JavaScript in a browser you don’t need tools to create an executable file. You only need a decent lightweight programmers’ editor such as my fav [Notepad++][10].
 
 [1]: https://en.wikipedia.org/wiki/Computer_programming "Wikipedia’s “Computer programming” article"
 [2]: https://en.wikipedia.org/wiki/Plain_text "Wikipedia’s “Plain text” article"
 [3]: https://en.wikipedia.org/wiki/Visual_programming_language "Wikipedia’s “Visual programming language” article"
 [4]: https://learn.microsoft.com/en-us/windows/win32/controls/cookbook-overview#using-comctl32dll-version-6-in-an-application-that-uses-only-standard-extensions "Microsoft documentation: “Enabling Visual Styles”"
 [5]: https://learn.microsoft.com/en-us/windows/win32/menurc/about-resource-files "Microsoft documentation “About Resource Files”"
+[6]: https://emscripten.org/docs/introducing_emscripten/about_emscripten.html "Emsriptem documentation “About Emscriptem”"
+[7]: https://www.electronjs.org/ "The Electron project’s home page"
+[8]: https://en.wikipedia.org/wiki/JSFiddle "Wikipedia’s page about the JSFiddle site."
+[9]: https://en.wikipedia.org/wiki/Qt_(software) "Wikipedia’s page about the Qt GUI framework."
+[10]: https://en.wikipedia.org/wiki/Notepad%2B%2B "Wikipedia’s page about the Notepad++ editor."
