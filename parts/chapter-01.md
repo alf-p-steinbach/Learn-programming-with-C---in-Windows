@@ -26,7 +26,7 @@ The instructions are usually specified as [**pure text**][2]. Environments where
 
 Of course there’s a lot of thinking also. And trying out things. And so on.
 
-Which instructions you can use depend on a lot. The computer’s built in instructions are almost never used directly because each one does so exceedingly little. Instead we use instructions that are *defined in terms of* sequences of other instructions that are defined in terms of…, and so on, which at some point finally are defined in terms of the computer’s built in binary instructions.
+Which instructions you can use depend on a lot. The computer’s built in instructions are almost never used directly because each one does so exceedingly little. Instead we use instructions that are *defined in terms of* sequences of other instructions, that in turn are defined in terms of, that are defined in terms of…, and so on, which at some point ends up in instructions that finally are defined directly in terms of the computer’s built in binary instructions. So there is no universal set of instructions to use for a given computer. There are the instructions that have been defined by your programming environment, and by yourself.
 
 
 ### 1.1 &nbsp;Execution of your code: compilation vs. interpretation.
