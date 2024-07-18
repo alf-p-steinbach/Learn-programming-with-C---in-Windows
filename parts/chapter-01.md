@@ -178,7 +178,7 @@ And commonly at the start of learning programming one creates only such **consol
 So, there will be *a lot* of console oriented examples, and to save both space and work and your reading effort I will no longer present screenshots of console windows but just *the relevant text in the windows*, e.g.
 
 <pre>
-blah!<b><i><font color="#FF7800">asdasd asdasd</font></i></b>!asd
+blah!<b><i><span style="color:#FF7800">asdasd asdasd</span></i></b>!asd
 </pre>
 
 ```text
