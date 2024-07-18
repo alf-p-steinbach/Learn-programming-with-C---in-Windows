@@ -1,15 +1,16 @@
-## Chapter 1: A gentle intro.
+## Chapter 1: &nbsp;A gentle intro.
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 <!-- **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*  -->
 
-  - [1.1 Some examples.](#11-some-examples)
-    - [1.1.1 Example: JavaScript in a browser.](#111-example-javascript-in-a-browser)
-    - [1.1.2 Example: C++ presenting a Windows desktop message box.](#112-example-c-presenting-a-windows-desktop-message-box)
-    - [1.1.3 Example: commands in the Cmd command interpreter.](#113-example-commands-in-the-cmd-command-interpreter)
-    - [1.1.4 Example: C++ text output in a console.](#114-example-c-text-output-in-a-console)
-- [1.2 Summary & the path from here.](#12-summary--the-path-from-here)
+  - [1.1 &nbsp;Execution of your code: compilation vs. interpretation.](#11-nbspexecution-of-your-code-compilation-vs-interpretation)
+  - [1.2 &nbsp;Some examples.](#12-nbspsome-examples)
+    - [1.2.1 &nbsp;Example: JavaScript in a browser.](#121-nbspexample-javascript-in-a-browser)
+    - [1.2.2 &nbsp;Example: C++ presenting a Windows desktop message box.](#122-nbspexample-c-presenting-a-windows-desktop-message-box)
+    - [1.2.3 &nbsp;Example: commands in the Cmd command interpreter.](#123-nbspexample-commands-in-the-cmd-command-interpreter)
+    - [1.2.4 &nbsp;Example: C++ text output in a console.](#124-nbspexample-c-text-output-in-a-console)
+- [1.3 &nbsp;Summary & the path from here.](#13-nbspsummary--the-path-from-here)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -19,15 +20,22 @@
 
 > ❞ **Computer programming** or **coding** is the composition of sequences of instructions, called programs, that computers can follow to perform tasks.
 
-The instructions are usually specified as [**pure text**][2]. Environments where one can specify the instructions by positioning graphical symbols and boxes, [do exist][3], but are mainly designed for children. General programming is most often only text, so the physical aspect of programming is mainly to write and edit text.
-
 <img src="chapter 01/images/Teenage-boy-checking-programming-code.margin-right.jpg" width="66%" align="left" margin="1em"/>
+
+The instructions are usually specified as [**pure text**][2]. Environments where one can specify the instructions by positioning graphical symbols and boxes, [do exist][3], but are mainly designed for children. General programming is most often only text, so the physical aspect of programming is mainly to write and edit text.
 
 Of course there’s a lot of thinking also. And trying out things. And so on.
 
-Which instructions you can use depend on a lot. The computer’s built in instructions are almost never used directly because each one does so exceedingly little. Instead we use instructions that are *defined in terms of* sequences of other instructions that are defined in terms of…, and so on, which at some point finally are defined in terms of the computer’s built in instructions.
+Which instructions you can use depend on a lot. The computer’s built in instructions are almost never used directly because each one does so exceedingly little. Instead we use instructions that are *defined in terms of* sequences of other instructions that are defined in terms of…, and so on, which at some point finally are defined in terms of the computer’s built in binary instructions.
 
-A **programming language** is a set of rules for how to define new instructions (you’ll do that all the time!), and how to use instructions: what you can and must write to use them. To write the pure text specification of a program you can use almost any text editor, including Windows’s own Notepad. But in order to create an executable program from that text, called a **compilation** of the text, you need tools that support the programming language that you’ve used. I.e. you need tools that support these rules, mainly a **compiler** for the language. Windows only provides these tools for Microsoft’s language C#. And so for other languages &mdash; including this book’s main language C++ &mdash; in order to create an executable you need to download and install the requisite tools.
+
+### 1.1 &nbsp;Execution of your code: compilation vs. interpretation.
+
+A **programming language** is a set of rules for how to define new instructions (you’ll do that all the time!), and how to use instructions: what you can and must write to use them. You need to select a programming language and write **code** &mdash; the sequence of instructions &mdash; according to the rules of that language. And you will use tools that support that language.
+
+To write the pure text specification of a program you can use almost any text editor, including Windows’s own Notepad. However it’s much easier if the editor supports coding in general and your chosen programming language in particular. For example, a **programmer’s editor** such as Notepad++ or VS Code or the editor in Visual Studio can help you automatically indent new code lines systematically (very important in order to readily see the structure of the code), it can use automatic coloring to clarify what rôles different parts of the code play, it can auto-complete words that you start typing, and so on.
+
+One way to get your code executed is to create a new executable program, usually one with binary instructions that the computer can execute directly, that *corresponds* to your textual instructions. In order to create such an executable program from your textual code, called a **compilation** of the text, you need tools that support the programming language that you’ve used. I.e. you need tools that support these rules, mainly a **compiler** for the language. Alas, Windows only provides these tools for Microsoft’s language C#. And so for other languages &mdash; including this book’s main language C++ &mdash; in order to create an executable you need to download and install the requisite tools.
 
 However, an alternative to creating a new executable program is to get an existing one, such as your web browser, to let itself *be directed* by your textual instructions. I.e. your textual instructions are then instructions for that program, telling it what to do, with that program more or less directly “executing” your instructions. This is called **interpretation**. It’s only possible if the existing program does support being directed by textual instructions, but web browsers do. All web browsers have a built in JavaScript **interpreter**.
 
@@ -44,9 +52,9 @@ Of course a modern computer executes its built in instructions at breakneck spee
 
 &hellip; for otherwise it would run out of instructions to execute in just a few seconds.
 
-### 1.1 Some examples.
+### 1.2 &nbsp;Some examples.
 
-#### 1.1.1 Example: JavaScript in a browser.
+#### 1.2.1 &nbsp;Example: JavaScript in a browser.
 
 Every web browser makes available a JavaScript instruction called `alert`, that pops up a **message box**. Using that instruction to display a message box with the text “Hello from JavaScript!” can go like this:
 
@@ -90,7 +98,7 @@ Result with the Chrome browser:
 You can try this out. There are *lots* of things that can go wrong so you do not necessarily, as yet, succceed. But it’s worth trying, especially if you can get help from others (or, Google is your friend).
 
 
-#### 1.1.2 Example: C++ presenting a Windows desktop message box.
+#### 1.2.2 &nbsp;Example: C++ presenting a Windows desktop message box.
 
 The main programming language in this book is **C++**, and unlike JavaScript it’s not supported by web browsers.
 
@@ -125,7 +133,7 @@ It’s not *perfect*, e.g. the button has an archaic square and all gray look. U
 Currently (mid 2024) it’s *possible* to create a message box like the first one via JavaScript, because Microsoft still hasn’t entirely removed some old JavaScript technology in Windows, once known as the “Windows Script Host”, or WSH for short. But let’s not delve on the past. Let’s move on.
 
 
-#### 1.1.3 Example: commands in the Cmd command interpreter.
+#### 1.2.3 &nbsp;Example: commands in the Cmd command interpreter.
 
 If you now have the impression that programming involves dealing with *text* and dealing with *files*, and that it involves using special *tools*, you’re right.
 
@@ -154,7 +162,7 @@ While most and possibly all command interpreters lack support for a distinct col
 So, commands can do all sorts of things. They’re much more powerful than using the mouse. Not the least because you can automate things by storing a sequence of commands in a text file and from then on use that as a new command (sounds familiar, yes? &mdash; it *is* a kind of programming, with commands).
 
 
-#### 1.1.4 Example: C++ text output in a console.
+#### 1.2.4 &nbsp;Example: C++ text output in a console.
 
 Many commands, including the `subst` command used above, are simply programs created with C++ or old C. Or perhaps some other programming language but C++ and C are the most common for this. Here’s a simple console-oriented C++ hello program:
 
@@ -207,7 +215,7 @@ L:\parts\chapter 01\code>|
 Again it’s not perfect, for in particular with this Unicode trickery digits are presented the same as in the other text (and it also means that you cannot just copy and paste these commands!). But it’s good enough. It will do.
 
 
-## 1.2 Summary & the path from here.
+## 1.3 &nbsp;Summary & the path from here.
 
 You’ve now seen examples that
 
