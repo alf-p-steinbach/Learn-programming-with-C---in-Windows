@@ -64,7 +64,11 @@ alert( 'Hello from JavaScript!' );
 
 So this is an example of the look & feel of **JavaScript** code.
 
-You *can* feed that directly to your browser by typing `javascript:alert('Hello from JavaScript!')` in its address bar. But that method gets impractical or downright impossible with larger code snippets, not to mention with a full JavaScript program that does something useful. So then instead the browser is fed a text file, e.g. an `.html` text file (`.html` is one of the filename extensions that a browser knows about), and in that text file the browser requires that the JavaScript code is placed within or referred to from some **HTML** code, which has an entirely different look & feel with lots of angle brackets:
+Result with the Chrome browser when that JavaScript code is fed to it via the “.html” file shown below:
+
+<img src="chapter 01/images/sshot-javascript-alert.png" >
+
+You *can* feed JavaScript code *directly* to your browser by e.g. typing `javascript:alert('Hello from JavaScript!')` in its address bar. But the direct methods get impractical or downright impossible with larger code snippets, not to mention with a full JavaScript program that does something useful. So then instead, more indirectly, the browser is fed a text file, e.g. an `.html` text file (`.html` is one of the filename extensions that a browser knows about), and in that text file the browser requires that the JavaScript code is placed within or referred to from some **HTML** code, which has an entirely different look & feel with lots of angle brackets:
 
 [*hello.js.html*](chapter%2001/code/hello.js.html)
 
@@ -89,10 +93,6 @@ This local HTML file can be fed to the browser in a number of ways, including
 * just double-clicking it; or
 * using the `start` command in Windows’ Cmd or PowerShell, e.g. `start hello.html`; or
 * opening the file from within the browser, e.g. keyboard shortcut `Ctrl`+`O` for “open” probably works.
-
-Result with the Chrome browser:
-
-<img src="chapter 01/images/sshot-javascript-alert.png" >
 
 You can try this out by copying the code exactly to a local “.html” text file. It’s possible to fail because there are *lots* of things that can go wrong, and there’s Murphy’s law “anything that can go wrong will go wrong”. If that happens then try to figure out what went wrong and fix it, and remember that you can get help from others in forums e.g. on Reddit, and that googling the problem can help.
 
