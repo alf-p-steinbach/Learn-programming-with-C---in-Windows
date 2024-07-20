@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <assembly xmlns="urn:schemas-microsoft-com:asm.v1" manifestVersion="1.0">
 <assemblyIdentity
     version="1.0.0.0"
@@ -6,7 +6,7 @@
     name="hello"
     type="win32"
 />
-<description>Your application description here.</description>
+<description>An example of a manifest that specifies modern look ’n feel.</description>
 <dependency>
     <dependentAssembly>
         <assemblyIdentity

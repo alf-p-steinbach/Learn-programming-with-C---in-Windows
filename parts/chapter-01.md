@@ -6,23 +6,25 @@
 
   - [1.1 &nbsp;Execution of your code: compilation vs. interpretation.](#11-nbspexecution-of-your-code-compilation-vs-interpretation)
   - [1.2 &nbsp;Some examples.](#12-nbspsome-examples)
-    - [1.2.1 &nbsp;Example: JavaScript in a browser.](#121-nbspexample-javascript-in-a-browser)
-    - [1.2.2 &nbsp;Example: C++ presenting a Windows desktop message box.](#122-nbspexample-c-presenting-a-windows-desktop-message-box)
-    - [1.2.3 &nbsp;Example: commands in the Cmd command interpreter.](#123-nbspexample-commands-in-the-cmd-command-interpreter)
+    - [1.2.1 &nbsp;Example: a JavaScript message box in a browser.](#121-nbspexample-a-javascript-message-box-in-a-browser)
+    - [1.2.2 &nbsp;Example: a C++ message box in the Windows desktop.](#122-nbspexample-a-c-message-box-in-the-windows-desktop)
+    - [1.2.3 &nbsp;Example: a C# message box via .NET’s Windows Forms, in the Windows desktop.](#123-nbspexample-a-c-message-box-via-nets-windows-forms-in-the-windows-desktop)
+    - [1.2.x &nbsp;Example: commands in the Cmd command interpreter.](#12x-nbspexample-commands-in-the-cmd-command-interpreter)
     - [1.2.4 &nbsp;Example: C++ text output in a console.](#124-nbspexample-c-text-output-in-a-console)
 - [1.3 &nbsp;Summary & the path from here.](#13-nbspsummary--the-path-from-here)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
+
 ---
 
-[Wikipedia][1]:
+[Wikipedia](https://en.wikipedia.org/wiki/Computer_programming "Wikipedia’s “Computer programming” article"):
 
 > ❞ **Computer programming** or **coding** is the composition of sequences of instructions, called programs, that computers can follow to perform tasks.
 
 <img src="chapter 01/images/Teenage-boy-checking-programming-code.margin-right.jpg" width="66%" align="left" margin="1em"/>
 
-The instructions are usually specified as [**pure text**][2]. Environments where one can specify the instructions by positioning graphical symbols and boxes, [do exist][3], but are mainly designed for children. General programming is most often only text, so the physical aspect of programming is mainly to write and edit text.
+The instructions are usually specified as [**pure text**](https://en.wikipedia.org/wiki/Plain_text "Wikipedia’s “Plain text” article"). Environments where one can specify the instructions by positioning graphical symbols and boxes, [do exist](https://en.wikipedia.org/wiki/Visual_programming_language "Wikipedia’s “Visual programming language” article"), but are mainly designed for children. General programming is most often only text, so the physical aspect of programming is mainly to write and edit text.
 
 Of course there’s a lot of thinking also. And trying out things. And so on.
 
@@ -54,7 +56,7 @@ Of course a modern computer executes its built in instructions at breakneck spee
 
 ### 1.2 &nbsp;Some examples.
 
-#### 1.2.1 &nbsp;Example: JavaScript in a browser.
+#### 1.2.1 &nbsp;Example: a JavaScript message box in a browser.
 
 Every web browser makes available a JavaScript instruction called `alert`, that pops up a **message box**. Using that instruction to display a message box with the text “Hello from JavaScript!” can go like this:
 
@@ -97,9 +99,9 @@ This local HTML file can be fed to the browser in a number of ways, including
 You can try this out by copying the code exactly to a local “.html” text file. It’s possible to fail because there are *lots* of things that can go wrong, and there’s Murphy’s law “anything that can go wrong will go wrong”. If that happens then try to figure out what went wrong and fix it, and remember that you can get help from others in forums e.g. on Reddit, and that googling the problem can help.
 
 
-#### 1.2.2 &nbsp;Example: C++ presenting a Windows desktop message box.
+#### 1.2.2 &nbsp;Example: a C++ message box in the Windows desktop.
 
-The main programming language in this book is **C++**, and unlike JavaScript it’s not supported by web browsers.
+A main programming language in this book is **C++**, and unlike JavaScript it’s not supported by web browsers.
 
 C++ generally requires you to create an executable file from your program text, and as mentioned, in Windows that requires you to download, install and use tools that understand C++. On a first reading you probably don’t have such tools, so on a first reading you’ll not be able to try out the following. But this example lets you see some of what C++ is about, that Windows’s functionality is readily available to C++ programs, and among other things Windows makes available a C++ instruction called `MessageBox` that presents a message box.
 
@@ -117,7 +119,12 @@ As with JavaScript-in-a-browser some more text is required around this C++ instr
 
 auto main() -> int
 {
-    MessageBox( 0, "Hello from C++!", "C++ says:", MB_ICONINFORMATION | MB_SETFOREGROUND );
+    MessageBox(
+        0,                                      // Parent window - none.
+        "Hello from C++!",                      // Message text.
+        "C++ says:",                            // Box title.
+        MB_ICONINFORMATION | MB_SETFOREGROUND   // Icon, button set, options.
+        );
 }
 ```
 
@@ -125,14 +132,50 @@ After using the C++ tools in the most straightforward way to create an executabl
 
 <img src="chapter 01/images/sshot-c++-messagebox.png">
 
-It’s not *perfect*, e.g. the button has an archaic square and all gray look. Unfortunately Microsoft chose to let `MessageBox` and other GUI elements use an old archaic style by default, and made it non-trivial to get [the modern style][4]. We’ll do that later, but for now, the very same C++ code, but just by adding some special data to the executable, can produce a message box like this:
+It’s not *perfect*, e.g. the button has an archaic square and all gray look. Unfortunately Microsoft chose to let `MessageBox` and other GUI elements use an old archaic style by default, and made it non-trivial to get [the modern style](https://learn.microsoft.com/en-us/windows/win32/controls/cookbook-overview#using-comctl32dll-version-6-in-an-application-that-uses-only-standard-extensions "Microsoft documentation: “Enabling Visual Styles”"). We’ll do that later, but for now, the very same C++ code, but just by adding some special data to the executable, can produce a message box like this:
 
 <img src="chapter 01/images/sshot-c++-messagebox.modern.png">
 
 Currently (mid 2024) it’s *possible* to create a message box like the first one via JavaScript, because Microsoft still hasn’t entirely removed some old JavaScript technology in Windows, once known as the “Windows Script Host”, or WSH for short. But let’s not delve on the past. Let’s move on.
 
+#### 1.2.3 &nbsp;Example: a C# message box via .NET’s Windows Forms, in the Windows desktop.
 
-#### 1.2.3 &nbsp;Example: commands in the Cmd command interpreter.
+A now large part of Windows’ functionality is not directly accessible to standard C++ code because it’s part of [**.NET**](https://en.wikipedia.org/wiki/.NET "Wikipedia’s “.NET” article")), a large set of instruction definitions (and other stuff) that builds on the basic Windows functionality. .NET has been part of Windows since Windows Vista. The main reason that .NET and C++ are a bit at odds is that .NET is a sort of “safe” **managed environment** where a program can’t just do whatever it wants, in particular with respect to memory management, while the point of C++ is to be able to do anything, including full control over the use of memory.
+
+So, with .NET one primarily uses languages designed for .NET, or that .NET was designed to accommodate, such as Microsoft’s **C#**.
+
+.NET has several frameworks for creating and handling desktop windows, including *Windows Forms*, *Windows Presentation Foundation* and *WinUI 3*. To avoid having to use Microsoft’s Visual Studio for code generation &mdash; and presenting all the resulting mess &mdash; I’ll here use the oldest, Windows Forms. A message box program using Windows Forms instructions from modern C# can go like this:
+
+[*hello.cs*](chapter%2001/code/hello.cs):
+
+```cpp
+using System.Windows.Forms;
+
+Application.EnableVisualStyles();       // Modern look ’n feel, please.
+MessageBox.Show(
+    "Hello from C#!",                       // Message text.
+    "C# says:",                             // Box title.
+    MessageBoxButtons.OK,                   // Button set.
+    MessageBoxIcon.Information              // Icon.
+    ); 
+```
+
+With C# 5 and earlier some more text needs to be added around the instructions, just as with JavaScript and C++ (though not the same text as any of them!).
+
+Anyway, *without* the `Application.EnableVisualStyles();` instruction the result is the same as the first C++ result, except for the text:
+
+<img src="chapter 01/images/sshot-csh-messagebox.png">
+
+And *with* the `Application.EnableVisualStyles();` instruction, as in the code shown above, the result is the same as the second C++ result, the one where the modern look ’n feel was obtained by adding some special data to the executable:
+
+<img src="chapter 01/images/sshot-csh-messagebox.modern.png">
+
+So, slightly different ways to achieve the same, in different languages: added data versus added instruction. But the code to produce the message box is pretty much the same in the C++ and C# code, and the final results are identical except for the text. That’s because the C++ code directly uses Windows’s functionality for presenting a message box, and the C# code uses that functionality indirectly by asking Windows Forms to produce a message box, and Windows Forms does that by using Windows’s message box functionality.
+
+By the way, in passing: the green text parts are **comments** that a compiler ignores. The comments are meant only for a human reader, so they serve the most important purpose of code, namely to communicate to a human reader. Different languages have different ways of writing comments, but C# and C++ have many very similar or identical rules.
+
+
+#### 1.2.x &nbsp;Example: commands in the Cmd command interpreter.
 
 If you now have the impression that programming involves dealing with *text* and dealing with *files*, and that it involves using special *tools*, you’re right.
 
@@ -231,10 +274,6 @@ And so this book uses a dual approach: at the start it’s  absolute-beginner-fr
 
 One advantage of this approach is that the installation of support tools can be more gradual than for starting with C++. For JavaScript in a browser you don’t need tools to create an executable file. You only need a decent lightweight programmers’ editor such as my fav [Notepad++][10].
 
-[1]: https://en.wikipedia.org/wiki/Computer_programming "Wikipedia’s “Computer programming” article"
-[2]: https://en.wikipedia.org/wiki/Plain_text "Wikipedia’s “Plain text” article"
-[3]: https://en.wikipedia.org/wiki/Visual_programming_language "Wikipedia’s “Visual programming language” article"
-[4]: https://learn.microsoft.com/en-us/windows/win32/controls/cookbook-overview#using-comctl32dll-version-6-in-an-application-that-uses-only-standard-extensions "Microsoft documentation: “Enabling Visual Styles”"
 [5]: https://learn.microsoft.com/en-us/windows/win32/menurc/about-resource-files "Microsoft documentation “About Resource Files”"
 [6]: https://emscripten.org/docs/introducing_emscripten/about_emscripten.html "Emsriptem documentation “About Emscriptem”"
 [7]: https://www.electronjs.org/ "The Electron project’s home page"
