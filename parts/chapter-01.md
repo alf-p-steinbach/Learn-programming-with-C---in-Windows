@@ -35,7 +35,7 @@ A **programming language** is a set of rules for how to define new instructions 
 
 The instructions are a pure text specification of a program, and to write that specification you can use almost any text editor including Windows’s own Notepad. However it’s much easier if the editor supports coding in general and your chosen programming language in particular. For example, a **programmer’s editor** such as Notepad++ or VS Code or the editor in Visual Studio can help you automatically indent new code lines systematically (very important in order to readily see the structure of the code), it can use automatic coloring to clarify what rôles different parts of the code play, it can auto-complete words that you start typing, and so on.
 
-One way to get your code executed is to use tools to automatically create a new executable program, usually one with binary instructions that the computer can execute directly, that *corresponds* to your textual instructions. This is called a **compilation** of the text. To compile it you mainly need a **compiler** for the programming language that you’ve used, but also some other tools. Alas, Windows only provides these tools for Microsoft’s own languages for the .NET platform, namely C#, JScript.NET and VBScript.NET. And so for other languages &mdash; including the C++ language used in this book &mdash; in order to create an executable you need to download and install the requisite tools.
+One way to get your code executed is to use tools to automatically create a new executable program, usually one with binary instructions that the computer can execute directly, that *corresponds* to your textual instructions. This is called a **compilation** of the text. To compile it you mainly need a **compiler** for the programming language that you’ve used, but also some other tools. Alas, Windows only provides these tools for Microsoft’s own languages for the .NET platform, namely C#, JScript.NET and VBScript.NET, and on my Windows 11 the compilers bundled with Windows are old versions. And so for other languages &mdash; including the C++ language used in this book &mdash; as well as for the most recent versions of the Microsoft languages, in order to create an executable you need to download and install the requisite tools.
 
 However, an alternative to creating a new executable program is to get an existing one, such as your web browser, to let itself *be directed* by your textual instructions. I.e. your textual instructions are then instructions for that program, telling it what to do, with that program more or less directly “executing” your instructions. This is called **interpretation**. It’s only possible if the existing program does support being directed by textual instructions, but web browsers do. All web browsers have a built in JavaScript **interpreter**.
 
@@ -66,13 +66,12 @@ So this is an example of the look & feel of **JavaScript** code.
 
 You *can* feed that directly to your browser by typing `javascript:alert('Hello from JavaScript!')` in its address bar. But that method gets impractical or downright impossible with larger code snippets, not to mention with a full JavaScript program that does something useful. So then instead the browser is fed a text file, e.g. an `.html` text file (`.html` is one of the filename extensions that a browser knows about), and in that text file the browser requires that the JavaScript code is placed within or referred to from some **HTML** code, which has an entirely different look & feel with lots of angle brackets:
 
-[*hello.html*](/chapter%2001/code/hello.html)
+[*hello.js.html*](chapter%2001/code/hello.js.html)
 
 ```html
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
     <title>JavaScript in the browser.</title>
   </head>
   <body>

@@ -2,3 +2,4 @@
 *.o
 parts/chapter 01/code/snip.txt
 *.obj
+/work
