@@ -223,6 +223,8 @@ Application.Run( window );
 
 Phew! That escalated fast, as they say. Which shows that GUI code can be fairly non-trivial, complex, and verbose.
 
+On the positive side it exemplifies the notion of a *sequence* of instructions, not just one or two.
+
 Result:
 
 <img src="chapter 01/images/sshot-csh-gui-window.png">
