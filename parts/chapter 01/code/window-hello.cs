@@ -33,6 +33,5 @@ ok_button.Anchor        = AnchorStyles.Right | AnchorStyles.Bottom;
 ok_button.Text          = "OK";
 ok_button.Click         += (object o, System.EventArgs ea) => { window.Close(); };
 rows.Controls.Add( ok_button, 0, 1 );
-// window.Controls.Add( ok_button );
 
 Application.Run( window );
