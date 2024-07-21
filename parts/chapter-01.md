@@ -343,19 +343,22 @@ You’ve now seen examples that
 * *A beginner can reasonably use JavaScript to direct a web browser, and that’s very common.*  
   And JavaScript is the primary choice for this, because browsers support JavaScript. In contrast C++ is not at all well suited for directing browsers. But it’s possible to [use *web assembly*][6] to run C++ applications such as games in a web browser.
 
-* *A novice **can** use C++ for Windows desktop GUI applications.*  
-  But other than simple message boxes it’s complex and much work. The usual recommendation for C++ is to use a framework such as Qt rather than using the low level Windows functionality directly. Building a GUI app with JavaScript is also possible e.g. by [building on the machinery of a web browser][7] (the VS Code editor is an example) but that’s not recommended for a novice, and the mentioned machinery is large.
+* *A novice can use C# for Windows desktop GUI applications, e.g. with Windows Forms.*  
+  But other than simple message boxes it’s complex and much work. Using C++ for this is even more complex. And using JavaScript for a freestanding GUI app, as opposed to JavaScript in a web page app, is costly in a different way: it currently involves copying much of the heavy machinery of a web browser, which is how the VS Code editor is implemented.
 
-* *Beginners can reasonably use C++  for console applications, and that’s easy and very common.*  
-  As of mid 2024 there is no modern JavaScript alternative for console applications. The mentioned Windows WSH technology is archaic and can disappear at any time. And the node.js framework only supports asynchronous text input and presentation, which is both too advanced and too impractical.
+* *Beginners can reasonably use C++ and/or C# for console applications, and that’s easy and common for C++.*  
+  As of mid 2024 there is no modern JavaScript alternative for console applications. The mentioned Windows WSH technology is archaic and is reportedly slated for removal in 2027. And the node.js framework only supports asynchronous text input and presentation, which is both too advanced and too impractical.
 
-A web browser is a very functionality-rich environment. JavaScript in a web browser has access to a lot of common GUI elements for user interaction, simple to use graphics and animation, image presentation, etc. For this reason alone JavaScript in a web browser can be very *interesting* and *motivating* for a beginner. Add to that that there is a thriving large JavaScript community online where e.g. examples are shared via sites such as [JsFiddle][8]. This makes JavaScript in a browser near ideal for a beginner.
+A web browser is a very functionality rich environment. JavaScript in a web browser has access to a lot of common GUI elements for user interaction, simple to use graphics and animation, image presentation, etc. For this reason alone JavaScript in a web browser can be very *interesting* and *motivating* for a beginner. Add to that that there is a thriving large JavaScript community online where e.g. examples are shared via sites such as [JsFiddle][8]. This makes JavaScript in a browser near ideal for an absolute beginner.
 
-At the same time, many concepts are simpler to explore and learn about via purely text based C++ console programs.
+At the same time, many concepts are simpler to explore and learn about via purely text based C# and/or C++ console programs.
 
-And so this book uses a dual approach: at the start it’s  absolute-beginner-friendly JavaScript in a browser and just some C++, while at the end it’s almost all C++, then using e.g. the [Qt framework][9] for GUI stuff and grapics/media capability.
+Experience with C# and C++ is important for another reason, namely that they provide much more checking that your code is correct *before* the program is run, namely when the code is compiled. This is called **static type checking**, as opposed to the **dynamic type checking** of JavaScript. Static type checking greatly reduces the work that you ideally would have to do to **test** a program, at the cost of having to write more code to keep the compiler informed of your intentions.
 
-One advantage of this approach is that the installation of support tools can be more gradual than for starting with C++. For JavaScript in a browser you don’t need tools to create an executable file. You only need a decent lightweight programmers’ editor such as my fav [Notepad++][10].
+And so this book uses all three languages, plus some HTML and CSS. That’s unconventional but I learned programming using multiple languages, languages aimed at different “levels” of programming just like these three main languages, and that worked nicely. However, the languages that I met first, namely the TI-57 calculator’s instructions (very simple), GW-Basic on an i8085-based Tandberg EC-10 home computer (both in high school roughly 1980), and then in college 1982 and onwards Pascal, a litte bit of Fortran, assembly languages for various computers, and a language called PL/M 86, were all very different so there was no confusion about whether e.g. Basic rules applied in Pascal or vice versa.
+
+In contrast the JavaScript, C++ and C# rules produce code that looks very similar at a glance, e.g. with curly braces `{}`. That’s because much of the notation comes from the common ancestor language **C** (which is still going strong, by the way). It would probably have been *even more clear* for you the reader, had these three popular languages stemmed from different language families, e.g., in terms of currently used languages, like Ada is very different from C, and like Scheme is very different from both Ada and C; but alas. On the other hand with similar language rules you can *reuse* much of what you have learned in one language, in the other languages. With luck that aspect wins so that you get a smooth easy ride.
+
 
 [5]: https://learn.microsoft.com/en-us/windows/win32/menurc/about-resource-files "Microsoft documentation “About Resource Files”"
 [6]: https://emscripten.org/docs/introducing_emscripten/about_emscripten.html "Emsriptem documentation “About Emscriptem”"
