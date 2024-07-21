@@ -172,7 +172,7 @@ And *with* the `Application.EnableVisualStyles();` instruction, as in the code s
 
 <img src="chapter 01/images/sshot-csh-messagebox.modern.png">
 
-So, slightly different ways to achieve the same, in different languages: added data versus added instruction. But the code to produce the message box is pretty much the same in the C++ and C# code, and the final results are identical except for the text. That’s because the C++ code directly uses Windows’ functionality for presenting a message box, and the C# code uses that functionality indirectly by asking Windows Forms to produce a message box, and Windows Forms does that by using Windows’ message box functionality.
+So, slightly different ways to achieve the same, in different languages: added data versus added instruction. But the code to produce the message box is pretty much the same in the C++ and C# code, and the final results are identical except for the text. That’s because the C++ code directly uses Windows’ core functionality for presenting a message box, and the C# code uses that functionality indirectly by asking Windows Forms to produce a message box, and Windows Forms does that by using Windows’ message box functionality.
 
 By the way, in passing: the green or on Github gray text parts are **comments** that a compiler ignores. The comments are meant only for a human reader, so they serve the most important purpose of code, namely to communicate to a human reader. Different languages have different ways of writing comments, but C# and C++ have many very similar or identical rules, including `//` for comments.
 
