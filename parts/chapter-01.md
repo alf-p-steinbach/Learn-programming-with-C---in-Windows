@@ -4,16 +4,16 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 <!-- **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*  -->
 
-  - [1.1 &nbsp;Execution of your code: compilation vs. interpretation.](#11-execution-of-your-code-compilation-vs-interpretation)
-  - [1.2 &nbsp;Some examples.](#12-some-examples)
-    - [1.2.1 &nbsp;Example: a JavaScript message box in a browser.](#121-example-a-javascript-message-box-in-a-browser)
-    - [1.2.2 &nbsp;Example: a C++ message box in the Windows desktop.](#122-example-a-c-message-box-in-the-windows-desktop)
-    - [1.2.3 &nbsp;Example: a C# message box via .NET’s Windows Forms, in the Windows desktop.](#123-example-a-c-message-box-via-nets-windows-forms-in-the-windows-desktop)
-    - [1.2.4 &nbsp;Example: a C# GUI window via .NET’s Windows Forms, in the Windows desktop.](#124-example-a-c-gui-window-via-nets-windows-forms-in-the-windows-desktop)
-    - [1.2.5 &nbsp;Example: commands in the Cmd command interpreter.](#125-example-commands-in-the-cmd-command-interpreter)
-    - [1.2.6 &nbsp;Example: C# text output in a console.](#126-example-c-text-output-in-a-console)
-    - [1.2.7 &nbsp;Example: C++ text output in a console.](#127-example-c-text-output-in-a-console)
-- [1.3 &nbsp;Summary & the path from here.](#13-summary--the-path-from-here)
+- [1.1 &nbsp;Execution of your code: compilation vs. interpretation.](#11-nbspexecution-of-your-code-compilation-vs-interpretation)
+- [1.2 &nbsp;Some examples.](#12-nbspsome-examples)
+  - [1.2.1 &nbsp;Example: a JavaScript message box in a browser.](#121-nbspexample-a-javascript-message-box-in-a-browser)
+  - [1.2.2 &nbsp;Example: a C++ message box in the Windows desktop.](#122-nbspexample-a-c-message-box-in-the-windows-desktop)
+  - [1.2.3 &nbsp;Example: a C# message box via .NET’s Windows Forms, in the Windows desktop.](#123-nbspexample-a-c-message-box-via-nets-windows-forms-in-the-windows-desktop)
+  - [1.2.4 &nbsp;Example: a C# GUI window via .NET’s Windows Forms, in the Windows desktop.](#124-nbspexample-a-c-gui-window-via-nets-windows-forms-in-the-windows-desktop)
+  - [1.2.5 &nbsp;Example: commands in the Cmd command interpreter.](#125-nbspexample-commands-in-the-cmd-command-interpreter)
+  - [1.2.6 &nbsp;Example: C++ text output in a console.](#126-nbspexample-c-text-output-in-a-console)
+  - [1.2.7 &nbsp;Example: C# text output in a console.](#127-nbspexample-c-text-output-in-a-console)
+- [1.3 &nbsp;Summary & the path from here.](#13-nbspsummary--the-path-from-here)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -263,12 +263,7 @@ While most and possibly all command interpreters lack support for a distinct col
 So, commands can do all sorts of things. They’re much more powerful than using the mouse. Not the least because you can automate things by storing a sequence of commands in a text file and from then on use that as a new command (sounds familiar, yes? &mdash; it *is* a kind of programming, with commands).
 
 
-#### 1.2.6 &nbsp;Example: C# text output in a console.
-
-asdasd asd
-
-
-#### 1.2.7 &nbsp;Example: C++ text output in a console.
+#### 1.2.6 &nbsp;Example: C++ text output in a console.
 
 Many commands, including the `subst` command used above, are simply programs created with C++ or old C. Or perhaps some other programming language but C++ and C are the most common for this. Here’s a simple console-oriented C++ hello program:
 
@@ -290,7 +285,7 @@ After using the tools to create a corresponding executable file “text-hello.ex
 
 I.e. a new command `text-hello` was created, and that command was created in a very simple way when one just has the tools installed and some experience with using them.
 
-And commonly at the start of learning programming one creates only such **console programs**, purely text oriented programs that need to be run from a command intepreter (or technically in any console window, but in practice from a command interpreter). That’s because it’s much easier to program: very much easier to program. One can concentrate on learning & investigating various important stuff rather than struggling forever with just the results presentation.
+And commonly at the start of learning programming one creates only such **console programs**, purely text oriented programs that need to be run from a command intepreter &mdash; or technically in any console window, but in practice from a command interpreter &mdash; as opposed to **GUI programs** with general windows, that are launched via menus or double-clicking or the like. One chooses to do console program because they’re much easier to program: they’re *very* much easier to program. One can concentrate on learning & investigating various important stuff rather than struggling forever with just the presentation aspects.
 
 So, there will be *a lot* of console oriented examples, and to save both space and work and your reading effort I will from here on just present *the relevant text in the console windows*, and not screenshots of the windows, e.g. like
 
@@ -317,7 +312,31 @@ L:\parts\chapter 01\code>|
 It’s not perfect: the orange coloring shown in the screenshot earlier, was much more clear. But this is good enough. It will do.
 
 
-## 1.3 &nbsp;Summary & the path from here.
+#### 1.2.7 &nbsp;Example: C# text output in a console.
+
+A C# console program roughly equivalent to the C++ one can go like this:
+
+```csharp
+using System;       // Console
+Console.WriteLine( "A textual console hello from C#!" );
+```
+
+Output after compiling (i.e. after generating a corresponding executable):
+
+<pre>
+L:\parts\chapter 01\code><b><i>text-hello</i></b>
+A textual console hello from C#!
+</pre>
+
+Such console program can be very useful as tools for programming work. In fact most tool that we’ll use, including the tool that I used to compile this program, are console programs. And creating console programs can be a very practical way to learn programming, because one avoids all the extra presentation- and interaction-related stuff and complexity of a GUI program, as you’ve seen.
+
+But in addition console output from a GUI program can be useful for *creating* such a program, because it lets you see what’s going on on the inside.
+
+There are other also other ways to do that, in particular using a special tool called a debugger, but **trace output** to a console is a technique that’s always available and a technique where you have full control.
+
+
+
+### 1.3 &nbsp;Summary & the path from here.
 
 You’ve now seen examples that
 
