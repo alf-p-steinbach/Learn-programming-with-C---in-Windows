@@ -4,16 +4,16 @@
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 <!-- **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*  -->
 
-  - [1.1 &nbsp;Execution of your code: compilation vs. interpretation.](#11-spexecution-of-your-code-compilation-vs-interpretation)
-  - [1.2 &nbsp;Some examples.](#12-spsome-examples)
-    - [1.2.1 &nbsp;Example: a JavaScript message box in a browser.](#121-spexample-a-javascript-message-box-in-a-browser)
-    - [1.2.2 &nbsp;Example: a C++ message box in the Windows desktop.](#122-spexample-a-c-message-box-in-the-windows-desktop)
-    - [1.2.3 &nbsp;Example: a C# message box via .NET’s Windows Forms, in the Windows desktop.](#123-spexample-a-c-message-box-via-nets-windows-forms-in-the-windows-desktop)
-    - [1.2.4 &nbsp;Example: a C# GUI window via .NET’s Windows Forms, in the Windows desktop.](#124-spexample-a-c-gui-window-via-nets-windows-forms-in-the-windows-desktop)
-    - [1.2.5 &nbsp;Example: commands in the Cmd command interpreter.](#125-spexample-commands-in-the-cmd-command-interpreter)
-    - [1.2.6 &nbsp;Example: C# text output in a console.](#126-spexample-c-text-output-in-a-console)
-    - [1.2.7 &nbsp;Example: C++ text output in a console.](#127-spexample-c-text-output-in-a-console)
-- [1.3 &nbsp;Summary & the path from here.](#13-spsummary--the-path-from-here)
+  - [1.1 &nbsp;Execution of your code: compilation vs. interpretation.](#11-execution-of-your-code-compilation-vs-interpretation)
+  - [1.2 &nbsp;Some examples.](#12-some-examples)
+    - [1.2.1 &nbsp;Example: a JavaScript message box in a browser.](#121-example-a-javascript-message-box-in-a-browser)
+    - [1.2.2 &nbsp;Example: a C++ message box in the Windows desktop.](#122-example-a-c-message-box-in-the-windows-desktop)
+    - [1.2.3 &nbsp;Example: a C# message box via .NET’s Windows Forms, in the Windows desktop.](#123-example-a-c-message-box-via-nets-windows-forms-in-the-windows-desktop)
+    - [1.2.4 &nbsp;Example: a C# GUI window via .NET’s Windows Forms, in the Windows desktop.](#124-example-a-c-gui-window-via-nets-windows-forms-in-the-windows-desktop)
+    - [1.2.5 &nbsp;Example: commands in the Cmd command interpreter.](#125-example-commands-in-the-cmd-command-interpreter)
+    - [1.2.6 &nbsp;Example: C# text output in a console.](#126-example-c-text-output-in-a-console)
+    - [1.2.7 &nbsp;Example: C++ text output in a console.](#127-example-c-text-output-in-a-console)
+- [1.3 &nbsp;Summary & the path from here.](#13-summary--the-path-from-here)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
