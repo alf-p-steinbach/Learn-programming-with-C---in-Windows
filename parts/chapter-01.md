@@ -142,7 +142,7 @@ Currently (mid 2024) it’s *possible* to create a message box like the first on
 
 #### 1.2.3 &nbsp;Example: a C# message box via .NET’s Windows Forms, in the Windows desktop.
 
-A now large part of Windows’ functionality is not directly accessible to standard C++ code because it’s part of [**.NET**](https://en.wikipedia.org/wiki/.NET "Wikipedia’s “.NET” article"), a large set of instruction definitions (and other stuff) that builds on the basic Windows functionality. .NET has been part of Windows since Windows Vista. The main reason that .NET and C++ are a bit at odds is that .NET is a sort of “safe” **managed environment** where a program can’t just do whatever it wants, in particular with respect to memory management, while the point of C++ is to be able to do anything, including full control over the use of memory.
+A now large part of Windows’ functionality is not directly accessible to standard C++ code because it’s part of [**.NET**](https://en.wikipedia.org/wiki/.NET "Wikipedia’s “.NET” article"), a large set of instruction definitions (and other stuff) that builds on the basic Windows functionality but that unlike the core Windows functionality isn’t designed for the C and C++ languages. .NET has been part of Windows since Windows Vista. .NET and standard C++ are a bit at odds not just because of the technical details but but also because .NET is a sort of “safe” **managed environment** where a program can’t just do whatever it wants, in particular with respect to memory management, while the point of C++ is to be able to do anything, including full control over the use of memory.
 
 So, with .NET one primarily uses languages designed for .NET, or that .NET was designed to accommodate, such as Microsoft’s **C#**.
 
