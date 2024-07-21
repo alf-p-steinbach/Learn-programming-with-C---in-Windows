@@ -144,7 +144,7 @@ A now large part of Windows’ functionality is not directly accessible to stand
 
 So, with .NET one primarily uses languages designed for .NET, or that .NET was designed to accommodate, such as Microsoft’s **C#**.
 
-.NET has several frameworks for creating and handling desktop windows, including *Windows Forms*, *Windows Presentation Foundation* and *WinUI 3*. To avoid having to use Microsoft’s Visual Studio for code generation &mdash; and presenting all the resulting mess &mdash; I’ll here use the oldest, Windows Forms. A message box program using Windows Forms instructions from modern C# can go like this:
+.NET has several frameworks for creating and handling desktop windows, including *Windows Forms*, *Windows Presentation Foundation* and *WinUI 3*. To avoid having to use Microsoft’s Visual Studio for code generation &mdash; and presenting all the resulting mess &mdash; I’ll here use the oldest, Windows Forms. A modern C# message box program using Windows Forms instructions from can go like this:
 
 [*hello.cs*](chapter%2001/code/hello.cs):
 
