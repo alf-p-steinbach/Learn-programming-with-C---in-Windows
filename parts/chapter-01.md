@@ -10,8 +10,9 @@
     - [1.2.2 &nbsp;Example: a C++ message box in the Windows desktop.](#122-nbspexample-a-c-message-box-in-the-windows-desktop)
     - [1.2.3 &nbsp;Example: a C# message box via .NET’s Windows Forms, in the Windows desktop.](#123-nbspexample-a-c-message-box-via-nets-windows-forms-in-the-windows-desktop)
     - [1.2.4 &nbsp;Example: a C# GUI window via .NET’s Windows Forms, in the Windows desktop.](#124-nbspexample-a-c-gui-window-via-nets-windows-forms-in-the-windows-desktop)
-    - [1.2.x &nbsp;Example: commands in the Cmd command interpreter.](#12x-nbspexample-commands-in-the-cmd-command-interpreter)
-    - [1.2.4 &nbsp;Example: C++ text output in a console.](#124-nbspexample-c-text-output-in-a-console)
+    - [1.2.5 &nbsp;Example: commands in the Cmd command interpreter.](#125-nbspexample-commands-in-the-cmd-command-interpreter)
+    - [1.2.6 &nbsp;Example: C# text output in a console.](#126-nbspexample-c-text-output-in-a-console)
+    - [1.2.7 &nbsp;Example: C++ text output in a console.](#127-nbspexample-c-text-output-in-a-console)
 - [1.3 &nbsp;Summary & the path from here.](#13-nbspsummary--the-path-from-here)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -231,7 +232,7 @@ If you drag e.g. the lower right corner of the window to make it wide enough, th
 All this automatic moving and line breaking is functionality that Windows Forms adds *on top of* the basic Windows functionality.
 
 
-#### 1.2.x &nbsp;Example: commands in the Cmd command interpreter.
+#### 1.2.5 &nbsp;Example: commands in the Cmd command interpreter.
 
 If you now have the impression that programming involves dealing with *text* and dealing with *files*, and that it involves using special *tools*, you’re right.
 
@@ -260,7 +261,12 @@ While most and possibly all command interpreters lack support for a distinct col
 So, commands can do all sorts of things. They’re much more powerful than using the mouse. Not the least because you can automate things by storing a sequence of commands in a text file and from then on use that as a new command (sounds familiar, yes? &mdash; it *is* a kind of programming, with commands).
 
 
-#### 1.2.4 &nbsp;Example: C++ text output in a console.
+#### 1.2.6 &nbsp;Example: C# text output in a console.
+
+asdasd asd
+
+
+#### 1.2.7 &nbsp;Example: C++ text output in a console.
 
 Many commands, including the `subst` command used above, are simply programs created with C++ or old C. Or perhaps some other programming language but C++ and C are the most common for this. Here’s a simple console-oriented C++ hello program:
 
