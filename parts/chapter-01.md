@@ -328,11 +328,11 @@ L:\parts\chapter 01\code><b><i>text-hello</i></b>
 A textual console hello from C#!
 </pre>
 
-Such console program can be very useful as tools for programming work. In fact most tool that we’ll use, including the tool that I used to compile this program, are console programs. And creating console programs can be a very practical way to learn programming, because one avoids all the extra presentation- and interaction-related stuff and complexity of a GUI program, as you’ve seen.
+Such console programs can be very useful as tools for programming work. In fact most tool that we’ll use, including the tool that I used to compile this program, are console programs. And creating console programs can be a very practical way to learn programming, because one avoids all the extra presentation- and interaction-related stuff and complexity of a GUI program, as you’ve seen.
 
 But in addition console output from a GUI program can be useful for *creating* such a program, because it lets you see what’s going on on the inside.
 
-There are other also other ways to do that, in particular using a special tool called a debugger, but **trace output** to a console is a technique that’s always available and a technique where you have full control.
+There are also other ways to do that, in particular using a special tool called a debugger, but **trace output** to a console is a technique that’s always available and a technique where you have full control.
 
 
 
