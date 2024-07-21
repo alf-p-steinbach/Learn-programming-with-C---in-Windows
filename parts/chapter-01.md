@@ -285,7 +285,7 @@ After using the tools to create a corresponding executable file “text-hello.ex
 
 I.e. a new command `text-hello` was created, and that command was created in a very simple way when one just has the tools installed and some experience with using them.
 
-And commonly at the start of learning programming one creates only such **console programs**, purely text oriented programs that need to be run from a command intepreter &mdash; or technically in any console window, but in practice from a command interpreter &mdash; as opposed to **GUI programs** with general windows, that are launched via menus or double-clicking or the like. One chooses to do console program because they’re much easier to program: they’re *very* much easier to program. One can concentrate on learning & investigating various important stuff rather than struggling forever with just the presentation aspects.
+And commonly at the start of learning programming one creates only such **console programs**, purely text oriented programs that need to be run from a command interpreter &mdash; or technically in any console window, but in practice from a command interpreter &mdash; as opposed to **GUI programs** with general windows, that are launched via menus or double-clicking or the like. One chooses to do console programs because they’re much easier to program: they’re *very* much easier to program. One can concentrate on learning & investigating various important stuff rather than struggling forever with just GUI presentation aspects.
 
 So, there will be *a lot* of console oriented examples, and to save both space and work and your reading effort I will from here on just present *the relevant text in the console windows*, and not screenshots of the windows, e.g. like
 
