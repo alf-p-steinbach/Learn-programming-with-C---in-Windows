@@ -9,6 +9,7 @@
     - [1.2.1 &nbsp;Example: a JavaScript message box in a browser.](#121-nbspexample-a-javascript-message-box-in-a-browser)
     - [1.2.2 &nbsp;Example: a C++ message box in the Windows desktop.](#122-nbspexample-a-c-message-box-in-the-windows-desktop)
     - [1.2.3 &nbsp;Example: a C# message box via .NET’s Windows Forms, in the Windows desktop.](#123-nbspexample-a-c-message-box-via-nets-windows-forms-in-the-windows-desktop)
+    - [1.2.4 &nbsp;Example: a C# GUI window via .NET’s Windows Forms, in the Windows desktop.](#124-nbspexample-a-c-gui-window-via-nets-windows-forms-in-the-windows-desktop)
     - [1.2.x &nbsp;Example: commands in the Cmd command interpreter.](#12x-nbspexample-commands-in-the-cmd-command-interpreter)
     - [1.2.4 &nbsp;Example: C++ text output in a console.](#124-nbspexample-c-text-output-in-a-console)
 - [1.3 &nbsp;Summary & the path from here.](#13-nbspsummary--the-path-from-here)
