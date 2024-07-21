@@ -150,7 +150,7 @@ So, with .NET one primarily uses languages designed for .NET, or that .NET was d
 
 [*hello.cs*](chapter%2001/code/hello.cs):
 
-```cpp
+```csharp
 using System.Windows.Forms;
 
 Application.EnableVisualStyles();       // Modern look ’n feel, please.
@@ -181,7 +181,7 @@ By the way, in passing: the green or on Github gray text parts are **comments** 
 
 A message box is a special purpose window where you only can vary a few things. With a general window you can include anything, or nothing, in the window. Using Windows’ core functionality directly for that is too complex to be of value as an example here, but it can be beneficial to have seen general window code expressed in C#, using Windows Forms:
 
-```cpp
+```csharp
 using System.Windows.Forms;             // Form, Label
 using System.Drawing;                   // Point, Size, Font, FontStyle, GraphicsUnit
     
