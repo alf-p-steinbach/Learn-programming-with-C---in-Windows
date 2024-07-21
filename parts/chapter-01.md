@@ -179,7 +179,7 @@ By the way, in passing: the green or on Github gray text parts are **comments** 
 
 #### 1.2.4 &nbsp;Example: a C# GUI window via .NET’s Windows Forms, in the Windows desktop.
 
-A message box is a special purpose window where you only can vary a few things. With a general window you can include anything, or nothing, in the window. Using Windows’ functionality directly for that is too complex to be of value as an example here, but it can be beneficial to have seen general window code expressed in C#, using Windows Forms:
+A message box is a special purpose window where you only can vary a few things. With a general window you can include anything, or nothing, in the window. Using Windows’ core functionality directly for that is too complex to be of value as an example here, but it can be beneficial to have seen general window code expressed in C#, using Windows Forms:
 
 ```cpp
 using System.Windows.Forms;             // Form, Label
