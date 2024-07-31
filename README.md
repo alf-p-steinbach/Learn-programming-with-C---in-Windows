@@ -10,5 +10,5 @@
 
 This is a book.
 
-* [Chapter 1 &nbsp;A gentle intro.](parts/chapter%2001/01.md)
-* [Chapter 2 &nbsp;First steps.](parts/chapter%2002/02.md)
+* [Chapter 1 &nbsp;A gentle intro.](parts/chapter%2001/01)
+* [Chapter 2 &nbsp;First steps.](parts/chapter%2002/02)
