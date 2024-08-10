@@ -17,4 +17,8 @@ This is a book.
 
 Test:
 
-<script src="https://gist.github.com/alf-p-steinbach/8faeadf8b3a800bde99690ad4932169b.js"></script>
+<script src="test.js"></script>
+
+---
+
+End.
