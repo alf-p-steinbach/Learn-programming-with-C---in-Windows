@@ -15,7 +15,7 @@ This is a book.
 
 ---
 
-Test:
+<span style="color:orange; font-weight: bold;">Test</span>:
 
 <script src="test.js"></script>
 
