@@ -1,0 +1,13 @@
+﻿This is the “Single click button!” program version 2.
+
+<button onclick="handleButtonClick( window.event );">
+    Click this button!
+</button>
+
+<script>
+    function handleButtonClick( eventInfo )
+    {
+        eventInfo.target.innerText = 'Has been clicked.';
+        eventInfo.target.disabled = true;
+    }
+</script>
