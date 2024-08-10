@@ -12,3 +12,9 @@ This is a book.
 
 * [Chapter 1 &nbsp;A gentle intro.](parts/chapter%2001/01)
 * [Chapter 2 &nbsp;First steps.](parts/chapter%2002/02)
+
+---
+
+Test:
+
+<script src="https://gist.github.com/alf-p-steinbach/8faeadf8b3a800bde99690ad4932169b.js"></script>
