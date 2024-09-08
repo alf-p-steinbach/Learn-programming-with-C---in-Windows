@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="323.91641mm"
-   height="95.365952mm"
-   viewBox="0 0 323.91642 95.365952"
+   width="161.95819mm"
+   height="47.68298mm"
+   viewBox="0 0 161.95819 47.68298"
    version="1.1"
    id="svg5"
    inkscape:version="1.1 (c68e22c387, 2021-05-23)"
@@ -27,9 +27,9 @@
      inkscape:pagecheckerboard="0"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="0.5499273"
-     inkscape:cx="542.79902"
-     inkscape:cy="139.1093"
+     inkscape:zoom="1"
+     inkscape:cx="236.5"
+     inkscape:cy="48.5"
      inkscape:window-width="2544"
      inkscape:window-height="1041"
      inkscape:window-x="1197"
@@ -119,20 +119,21 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-41.478281,-45.72161)">
+     transform="translate(-122.45738,-69.563093)">
     <text
        xml:space="preserve"
-       style="font-size:27.7823px;line-height:1.25;font-family:'Book Antiqua';-inkscape-font-specification:'Book Antiqua';fill:#4d4d4d;stroke-width:0.868198"
-       x="123.97986"
-       y="103.48734"
+       style="font-size:13.8912px;line-height:1.25;font-family:'Book Antiqua';-inkscape-font-specification:'Book Antiqua';fill:#4d4d4d;stroke-width:0.434099"
+       x="163.70818"
+       y="98.445961"
        id="text7439"><tspan
          sodipodi:role="line"
          id="tspan7437"
-         style="fill:#4d4d4d;stroke-width:0.868198"
-         x="123.97986"
-         y="103.48734">⇨</tspan></text>
+         style="fill:#4d4d4d;stroke-width:0.434099"
+         x="163.70818"
+         y="98.445961">⇨</tspan></text>
     <a
-       id="a16823">
+       id="a16823"
+       transform="matrix(0.5,0,0,0.5,101.71824,46.702293)">
       <ellipse
          style="opacity:1;fill:#e9ddaf;fill-opacity:1;fill-rule:evenodd;stroke:#666666;stroke-width:0.505942;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.995338;stop-color:#000000"
          id="path16680"
@@ -143,43 +144,44 @@
     </a>
     <text
        xml:space="preserve"
-       style="font-size:8.46667px;line-height:1.25;font-family:'Book Antiqua';-inkscape-font-specification:'Book Antiqua';text-align:center;text-anchor:middle;stroke-width:0.264583"
-       x="208.72649"
-       y="59.57943"
+       style="font-size:4.23334px;line-height:1.25;font-family:'Book Antiqua';-inkscape-font-specification:'Book Antiqua';text-align:center;text-anchor:middle;stroke-width:0.132291"
+       x="206.08148"
+       y="76.492004"
        id="text17764"><tspan
          sodipodi:role="line"
          id="tspan17762"
-         style="text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="208.72649"
-         y="59.57943">Execution</tspan></text>
+         style="text-align:center;text-anchor:middle;stroke-width:0.132291"
+         x="206.08148"
+         y="76.492004">Execution</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:27.7823px;line-height:1.25;font-family:'Book Antiqua';-inkscape-font-specification:'Book Antiqua';fill:#4d4d4d;stroke-width:0.868198"
-       x="269.7605"
-       y="103.48734"
+       style="font-size:13.8912px;line-height:1.25;font-family:'Book Antiqua';-inkscape-font-specification:'Book Antiqua';fill:#4d4d4d;stroke-width:0.434099"
+       x="236.5985"
+       y="98.445961"
        id="text24905"><tspan
          sodipodi:role="line"
          id="tspan24903"
-         style="fill:#4d4d4d;stroke-width:0.868198"
-         x="269.7605"
-         y="103.48734">⇨</tspan></text>
+         style="fill:#4d4d4d;stroke-width:0.434099"
+         x="236.5985"
+         y="98.445961">⇨</tspan></text>
     <rect
        style="font-variation-settings:normal;opacity:1;fill:#ac9d93;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:0.224252;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;filter:url(#filter944);stop-color:#000000;stop-opacity:1"
        id="rect32526"
        width="73.65464"
        height="80.62886"
        x="43.919716"
-       y="58.420792" />
+       y="58.420792"
+       transform="matrix(0.5,0,0,0.5,101.71824,46.702293)" />
     <rect
-       style="font-variation-settings:normal;opacity:1;fill:#ff9955;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.264583;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
+       style="font-variation-settings:normal;opacity:1;fill:#ff9955;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:0.132291;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;stop-color:#000000;stop-opacity:1"
        id="rect24907"
-       width="73.654633"
-       height="80.62886"
-       x="41.610573"
-       y="56.304123" />
+       width="36.827316"
+       height="40.31443"
+       x="122.52353"
+       y="74.854355" />
     <g
        id="g26258"
-       transform="matrix(1.3889022,0,0,1.3889022,44.746465,67.499422)">
+       transform="matrix(0.6944511,0,0,0.6944511,124.09147,80.452004)">
       <path
          fill="url(#c)"
          fill-rule="evenodd"
@@ -214,64 +216,65 @@
     </g>
     <text
        xml:space="preserve"
-       style="font-size:8.46667px;line-height:1.25;font-family:'Book Antiqua';-inkscape-font-specification:'Book Antiqua';text-align:center;text-anchor:middle;stroke-width:0.264583"
-       x="79.729347"
-       y="51.881443"
+       style="font-size:4.23334px;line-height:1.25;font-family:'Book Antiqua';-inkscape-font-specification:'Book Antiqua';text-align:center;text-anchor:middle;stroke-width:0.132291"
+       x="141.58292"
+       y="72.643013"
        id="text26262"><tspan
          sodipodi:role="line"
          id="tspan26260"
-         style="text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="79.729347"
-         y="51.881443">Executable</tspan></text>
+         style="text-align:center;text-anchor:middle;stroke-width:0.132291"
+         x="141.58292"
+         y="72.643013">Executable</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:8.46667px;line-height:1.25;font-family:'Book Antiqua';-inkscape-font-specification:'Book Antiqua';text-align:center;text-anchor:middle;stroke-width:0.264583"
-       x="207.76424"
-       y="80.411896"
+       style="font-size:4.23334px;line-height:1.25;font-family:'Book Antiqua';-inkscape-font-specification:'Book Antiqua';text-align:center;text-anchor:middle;stroke-width:0.132291"
+       x="205.60036"
+       y="86.908241"
        id="text41473"><tspan
          sodipodi:role="line"
-         style="font-style:italic;text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="207.76424"
-         y="80.411896"
+         style="font-style:italic;text-align:center;text-anchor:middle;stroke-width:0.132291"
+         x="205.60036"
+         y="86.908241"
          id="tspan41873">The physical computer</tspan><tspan
          sodipodi:role="line"
-         style="font-style:italic;text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="207.76424"
-         y="91.005447"
+         style="font-style:italic;text-align:center;text-anchor:middle;stroke-width:0.132291"
+         x="205.60036"
+         y="92.205025"
          id="tspan6266">or a simulated computer</tspan><tspan
          sodipodi:role="line"
-         style="font-style:italic;text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="207.76424"
-         y="101.59901"
+         style="font-style:italic;text-align:center;text-anchor:middle;stroke-width:0.132291"
+         x="205.60036"
+         y="97.501808"
          id="tspan6268">is directed by</tspan><tspan
          sodipodi:role="line"
-         style="font-style:italic;text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="207.76424"
-         y="112.19256"
+         style="font-style:italic;text-align:center;text-anchor:middle;stroke-width:0.132291"
+         x="205.60036"
+         y="102.79859"
          id="tspan41875">the numerical instructions</tspan><tspan
          sodipodi:role="line"
-         style="font-style:italic;text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="207.76424"
-         y="122.78611"
+         style="font-style:italic;text-align:center;text-anchor:middle;stroke-width:0.132291"
+         x="205.60036"
+         y="108.09538"
          id="tspan6270">in the executable.</tspan></text>
     <path
        id="path16922"
        style="mix-blend-mode:normal;fill:#cccccc;stroke:#cccccc;stroke-width:1.17525;stroke-linejoin:round;filter:url(#filter16960)"
-       d="m 314.98557,97.176349 14.2464,-33.241322 h 32.64757 l -23.5953,23.891943 h 19.44008 l -38.13835,42.73875 9.79408,-33.537926 z" />
+       d="m 314.98557,97.176349 14.2464,-33.241322 h 32.64757 l -23.5953,23.891943 h 19.44008 l -38.13835,42.73875 9.79408,-33.537926 z"
+       transform="matrix(0.5,0,0,0.5,101.71824,46.702293)" />
     <path
        id="path2996"
-       style="fill:#ffd500;stroke:#ffbf00;stroke-width:1.17525;stroke-linejoin:round"
-       d="m 313.39806,95.059681 14.2464,-33.241322 h 32.64757 l -23.5953,23.891943 h 19.44008 l -38.13835,42.738738 9.79408,-33.537914 z" />
+       style="fill:#ffd500;stroke:#ffbf00;stroke-width:0.587625;stroke-linejoin:round"
+       d="m 258.41727,94.232134 7.1232,-16.620661 h 16.32379 l -11.79765,11.945971 h 9.72004 l -19.06918,21.369366 4.89704,-16.768954 z" />
     <text
        xml:space="preserve"
-       style="font-size:8.46667px;line-height:1.25;font-family:'Book Antiqua';-inkscape-font-specification:'Book Antiqua';text-align:center;text-anchor:middle;stroke-width:0.264583"
-       x="337.36169"
-       y="58.760616"
+       style="font-size:4.23334px;line-height:1.25;font-family:'Book Antiqua';-inkscape-font-specification:'Book Antiqua';text-align:center;text-anchor:middle;stroke-width:0.132291"
+       x="270.39908"
+       y="76.082603"
        id="text1007"><tspan
          sodipodi:role="line"
          id="tspan1005"
-         style="text-align:center;text-anchor:middle;stroke-width:0.264583"
-         x="337.36169"
-         y="58.760616">Effect!</tspan></text>
+         style="text-align:center;text-anchor:middle;stroke-width:0.132291"
+         x="270.39908"
+         y="76.082603">Effect!</tspan></text>
   </g>
 </svg>
